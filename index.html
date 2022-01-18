@@ -1,6 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<!--
+<!-- 
 WELCOME USER! You've reached the source code for a manual created by STS. If you plan on updating or editing this manual, then you're in the right place!
 
 Before editing any STS manuals, please read through the editing guide at https://sts.doit.wisc.edu/manual-editing-guide and follow all recommendations. It is important that we follow the conventions set in the guide in order to maintain quality and consistency across all of our training materials.
@@ -8,1092 +8,1093 @@ Before editing any STS manuals, please read through the editing guide at https:/
 Good luck, and have fun!
 -->
 
-<head>
+    <head>
+
+        <!-- Manual title -->
+        <title>Excel 1</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Software manual provided by Software Training for Students at the University of Wisconsin.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' id='uwmadison-fonts-css'  href='https://brand.wisc.edu/content/themes/uw-theme/dist/fonts/uw160/fonts.css?ver=1.1.1' type='text/css' media='all' /><link rel="stylesheet" type="text/css" href="../master-files/css/stylesheet.css">
+        <script src="../master-files/highlight.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="../master-files/smooth-scroll.js"></script>
+        <script src="../master-files/primary-functions.js"></script>
+        <script src="../master-files/ga.js"></script>
+    </head>
+
+    <body>
+
+        <!--Manual Front Page-->
+        <div class="manual-front-page"> 
+            <div id="coverpage-title"> 
+                <h1>Microsoft Excel 1</h1> 
+                <h2>Introduction to Editing Spreadsheets</h2> 
+            </div> 
+            
+            <div id="about-page"></div> 
+            
+            <div id="outline"></div> 
+            
+        </div>                
+
+        <!--Topics Start -->
+
+        <!--Introduction START-->
+        <section class="topic"> 
+            <h1>Introduction</h1>
+            <h2>About this Class</h2>
+
+            <p>Welcome to Excel 1! Excel is a program that allows users to create and manipulate spreadsheets, create tables, perform calculations, and chart data. This class will cover the basics and allow you to begin to explore the powerful features of Excel.</p>
+
+            <p>Excel is a program that is apart of the Microsoft Office Suite. Every few years, the company releases new versions of the Microsoft Office Suite. This manual is designed from Excel 2013 for the PC. If you are working on a different version of Microsoft Office, you are welcome to try the exercises, but some features may be located in a different location or may not be available. </p>
+
+            <h2>Prerequisites and Requirements</h2>
 
-    <!-- Manual title -->
-    <title>Excel 1</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Software manual provided by Software Training for Students at the University of Wisconsin.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' id='uwmadison-fonts-css' href='https://brand.wisc.edu/content/themes/uw-theme/dist/fonts/uw160/fonts.css?ver=1.1.1' type='text/css' media='all' />
-    <link rel="stylesheet" type="text/css" href="../master-files/css/stylesheet.css">
-    <script src="../master-files/highlight.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="../master-files/smooth-scroll.js"></script>
-    <script src="../master-files/primary-functions.js"></script>
-    <script src="../master-files/ga.js"></script>
-</head>
-
-<body>
-
-    <!--Manual Front Page-->
-    <div class="manual-front-page">
-        <div id="coverpage-title">
-            <h1>Microsoft Excel 1</h1>
-            <h2>Introduction to Editing Spreadsheets</h2>
-        </div>
-
-        <div id="about-page"></div>
-
-        <div id="outline"></div>
-
-    </div>
-
-    <!--Topics Start -->
-    <!--Introduction START-->
-    <section class="topic">
-        <h1>Introduction</h1>
-        <h2>About this Class</h2>
-
-        <p>Welcome to Excel 1! Excel is a program that allows users to create and manipulate spreadsheets, create tables, perform calculations, and chart data. This class will cover the basics and allow you to begin to explore the powerful features of Excel.</p>
-
-        <p>Excel is a program that is apart of the Microsoft Office Suite. Every few years, the company releases new versions of the Microsoft Office Suite. This manual is designed from Excel 2013 for the PC. If you are working on a different version of Microsoft Office, you are welcome to try the exercises, but some features may be located in a different location or may not be available. </p>
-
-        <h2>Prerequisites and Requirements</h2>
-
-        <ul>
-            <li>
-                <p>Basic computer operation skills</p>
-            </li>
-            <li>
-                <p>Access to Microsoft Excel 2013</p>
-            </li>
-        </ul>
-    </section>
-    <!--Introduction END-->
-    <!--Navigating the Excel Environment START-->
-    <section class="topic">
-        <h1>Navigating the Excel Environment</h1>
-
-        <p>The Excel Interface from Excel 2010 to Excel 2013 for PC has changed aesthetically, but it has a similar layout. If you are familiar with Excel 2010, there should not be problems for you to adapt to the Excel 2013 layout.</p>
-
-        <h2>Excel Interface</h2>
-        <p><span class="highlight">To begin, open Excel on your computer.</span> If you are having any problems finding Excel, you can use the search bar under the start menu.</p>
-        <p>The following terms describe the basic features of the Excel environment that we will use today:</p>
-
-        <ul>
-            <li>
-                <p><b>Worksheet: </b>the Excel workspace is a grid of cells called a worksheet or a spreadsheet</p>
-            </li>
-
-            <li>
-                <p><b>Cells: </b>contain data such as numbers, text, or formulas</p>
-            </li>
-
-            <li>
-                <p><b>Columns: </b>vertical sections of the cells (up-and-down)</p>
-            </li>
-
-            <li>
-                <p><b>Rows: </b>horizontal sections of the cells (right-to-left)</p>
-            </li>
-
-            <li>
-                <p><b>Active cell </b>the active cell is the currently selected cell which is indicated by the bold box around it. When commands are performed, they are performed on the current active cell.</p>
-            </li>
-
-            <li>
-                <p><b>Name box: </b>displays the unique name for the active cell. Each cell has a unique name containing a letter and a number that refer to which column and row intersect to form the cell</p>
-            </li>
-
-            <li>
-                <p><b>Formula bar: </b>location where new data or formulas can be entered to edit the active cell's data, located above the worksheet</p>
-            </li>
-
-            <li>
-                <p><b>Worksheet Tabs: </b>additional worksheets that are available for use in the current Excel document</p>
-            </li>
-
-            <li>
-                <p><b>View Magnification: </b>allows user to increase or decrease the "zoom" level of the workspace, does not change the actual size of the fonts and images that will print</p>
-            </li>
-
-            <li>
-                <p><b>Scroll bars: </b>allows user to pan to cells that currently aren't visible in the workspace</p>
-            </li>
-
-            <li>
-                <p><b>Ribbon, Tabs, and Panels: </b>the bar above the worksheet and formula bar with all available commands, divided into tabs and each tab is divided into panels</p>
-            </li>
-
-            <li>
-                <p><b>Help button: </b>links to Microsoft's documentation and troubleshooting resources</p>
-            </li>
-        </ul>
-
-        <h3>Getting Familiar with Excel</h3>
-        <ol class="instruction-list">
-            <li>
-                <p>Click in a few different cells to see the active cell change. Notice how the Name Box (left of the Formula Bar) changes depending on the cell selected.</p>
-            </li>
-            <li>
-                <p>Press the up, down, left, and right arrow keys to move one cell in that direction at a time.</p>
-            </li>
-            <li>
-                <p>Use the scroll bars (the actual bars of the arrows) to move to a different area of the worksheet that is off-screen. Also, you can use the scroll and click-wheel of the mouse.</p>
-            </li>
-            <li>
-                <p>Use the view magnification to try changing the zoom level of the worksheet.</p>
-            </li>
-            <li>
-                <p>Press Ctrl + Home to return to cell <span class="type-text">A1</span></p>
-            </li>
-        </ol>
-
-        <p>When we refer to cells in Excel, they are given a letter and a number (like how <span class="type-text">A1</span> is referenced above). The letter (A) describes the column A and the number 1 refers to row 1.</p>
-        <p>Similarly, when we refer to a set of cells, we use the colon (:) to describe them. For example, if we want to refer to cells <span class="type-text">A1</span> to <span class="type-text">A26</span>, we would describe it as <span class="type-text">A1:A26</span>. If we want to refer to a box of cells, we would describe them as [upper left cell]:[lower right cell]. So, if we looked at cells <span class="type-text">A1</span>, <span class="type-text">A2</span>, <span class="type-text">A3</span> <span class="type-text">B1</span>, <span class="type-text">B2</span>, and <span class="type-text">B3</span>; we would refer to them as <span class="type-text">A1:B3</span>.</p>
-
-        <div class=centered-image-large border>
-            <img src=images/interface-key-1.png alt="Basic excel interface">
-        </div>
-        <!--TODO: add section for help (File -> Options -> Quick Access Toolbar -> All Commands -> Help -> add -> OK) -->
-        <h2>Workbooks vs. Worksheets</h2>
-        <p>A single Excel file is called a "workbook" and by default contains three "worksheets". Each worksheet contains a unique workspace where data can be stored and manipulated. Data can be linked between worksheets if desired. All the worksheets within a workbook can be viewed near the bottom of the workbook in an area called the "worksheet tabs".</p>
-        <br>
-
-        <h3>Inserting and Deleting a Worksheet</h3>
-        <ol class="instruction-list">
-            <li>
-                <p>Click on the small insert worksheet icon.</p>
-            </li>
-            <li>
-                <p>Double-click on the worksheet tab and type in the desired name to rename the worksheet.</p>
-            </li>
-            <li>
-                <p>Right-click on the worksheet tab and select Delete to permanently remove that worksheet.</p>
-            </li>
-
-
-    </section>
-
-
-    <section class="topic">
-        <h1>Entering and Editing Data</h1>
-        <p>In its most basic form, Excel is an interface that allows you to store data in an organized manner. The word "data" is used here in a broad sense; it can apply to any combination of numeric and textual information. In order to use any of Excel's abilities, you must understand how to insert data in an easy to access and logical manner.</p>
-        <h2>Inserting Data into a Cell</h2>
-        <p>For any tool in Excel, there are most likely multiple ways to access it. This may include buttons on the ribbon, keyboard shortcuts, and quick-access buttons within the interface. There is often not a right or wrong way to use Excel's tools and functions and instead it is left up to user preference. You are encouraged to try each exercise in this manual using multiple methods to determine the way that works best for you.</p>
-        <ol class="instruction-list">
-            <li>
-                <p>Open the <span class="type-text">Excel1-class-file.xlsx</span> file</p>
-            </li>
-        </ol>
-        <br>
-        <p>There are three different ways to enter or edit data in a cell. Each will be briefly discussed and you can choose the method you like best;</p>
-        <ul>
-            <li>
-                <p><b>Click & Type: </b>The first way to enter data is to click in a cell and simply begin to type.</p>
-            </li>
-            <li>
-                <p><b>Formula Bar: </b>The second way to enter data is to click in the formula bar. This will activate a blinking cursor and data can be typed in.</p>
-            </li>
-            <li>
-                <p><b>Double-Click: </b>Lastly, double-clicking in an active cell will activate a blinking cursor to allow you to enter data also.</p>
-            </li>
-        </ul>
-        <p>After the desired data is typed in, the Enter key can be pressed to accept the entry into the cell. Alternatively, you may click the small check-mark button to the left of the formula bar to accept the data as well. If you change your mind about inserting this data, you can instead press the escape key or click the X button next the formula bar to revert the cell to its previous state. Now that these methods have been explored, let’s get started.</p> <!--Start edit-->
-
-    </section>
-    <!--Navigating the Excel Environment END-->
-    <!--Formulas and Functions START-->
-    <section class="topic">
-        <h1>Using Formulas and Functions</h1>
-        <p>Excel's main features are its ability to work with mathematical and logical operations to do calculations for you. This allows the user to not only organize data in a spreadsheet but also to perform calculations, in order to create new and more useful data. Excel is a powerful utility that is able to update calculations and formulas as your data changes. We will soon see that this happens quickly and easily without a noticeable delay</p>
-        <h2>Basic Formulas</h2>
-        <p>Excel's calculation abilities are split into two subsets: formulas and functions. A formula is a basic mathematical statement that consist of addition, subtraction, multiplication, and division. These are things you could do on a basic calculator but Excel has the functionality built-in.</p>
-        <br>
-        <p>The basic operations used for Excel's formulas are:</p>
-        <ul>
-            <li>
-                <p>+ : plus sign used for addition</p>
-            </li>
-            <li>
-                <p>- : minus sign used for subtraction</p>
-            </li>
-            <li>
-                <p>* : asterisk used for multiplication</p>
-            </li>
-            <li>
-                <p>/ : forward slash used for division</p>
-            </li>
-            <li>
-                <p>= : equals sign used to start any formula or function</p>
-            </li>
-        </ul>
-        <p>The equals sign is a key part of every formula or function. By putting an "=" as the first character in a cell, Excel enters its calculation mode and treats anything that appears after it as an expression that it can evaluate. It will become second nature for you to automatically put the "=" as the first thing whenever you want Excel to do a calculation for you.</p>
-
-        <h3>Start Worksheet</h3> <!--start worksheet-->
-
-        <ol class="instruction-list">
-            <li>
-                <p>Open the class files for Excel 1. You can find these files on canvas.</p>
-            </li>
-            <li>
-                <p>Navigate to the Start worksheet tab in the bottom left of Excel.</p>
-            </li>
-            <!--
-                <li>
-                    <p>Click the New Worksheet button at the bottom of the screen.</p>
-                </li>
-
-                <div class=centered-image-large border>
-                    <img src=images/formulas-newworksheet-1.png alt="Making a new worsheet">
-                </div>
-
-
-            <li>
-                <p>Enter a numerical value for cells <span class="type-text">A1</span>, <span class="type-text">A2</span>, <span class="type-text">A3</span>, <span class="type-text">A4</span>, <span class="type-text">B1</span>, <span class="type-text">B2</span>, <span class="type-text">B3</span>, and <span class="type-text">B4</span>.</p>
-            </li>
-                -->
-            <li>
-                <p>Select cell <span class="type-text">B3</span>.</p>
-            </li>
-            <li>
-                <p>Type <span class="type-text">=E3+E4</span> into the cell and press enter.</p>
-            </li>
-            <p>You have just successfully entered your first Excel Formula! You should get the sum of <span class="type-text">A1</span> and <span class="type-text">B1</span> in cell <span class="type-text">C1</span>. Now let's try a different way of entering a formula</p> <!-- edits-->
-            <li>
-                <p>Select cell <span class="type-text">B4</span></p>
-            </li>
-            <li>
-                <p>Type <span class="type-text">=</span></p>
-            </li>
-            <li>
-                <p>Click on cell <span class="type-text">E3</span></p>
-            </li>
-            <li>
-                <p>Type <span class="type-text">*</span></p>
-            </li>
-            <li>
-                <p>Select cell <span class="type-text">E4</span></p>
-            </li>
-            <p><span class="type-text">E3</span> should now be highlighted while the same thing happens to <span class="type-text">E4</span> This can help you visually see what the formula is referencing. As you add more cell references in the same formula, each will be highlighted different color.</p>
-
-            <div class=centered-image-small border>
-                <img src=images/formulas-example-1.png alt="Example of using formulas"> <!--change image-->
-            </div>
-
-            <li>
-                <p>Press Enter to see the result. It should be the product of cells <span class="type-text">E3</span> and <span class="type-text">E4</span>.</p>
-            </li>
-            <li>
-                <p>Now fill out the rest of the table, cells <span class="type-text">B5</span> through <span class="type-text">B7</span> using whichever method you find easier.</p>
-            </li>
-        </ol>
-        <!-- put in SUM, date and time, fill out the timesheet table, and have them create their own table.-->
-        <h2>Basic Functions</h2>
-
-        <p>Functions can serve the same purpose as formulas but are usually shorter and easier to enter. Functions are built-in calculations that Excel comes packaged with that allow you to execute math & trig functions, logical functions, text manipulation, financial functions, and much more. Here, we will explore the most commonly used and basic functions.</p>
-
-        <h3>Viewing and Entering Functions</h3>
-
-        <p>There are three common ways to enter functions that will be reviewed here: typing the complete function in, using the drop-down menu suggestions, and using the insert function library. We're going to enter a <span class="type-text">SUM</span>  function, which adds the integer values of the cells highlighted. Note that this function only works if there are integer values within the cell.</p>
-
-        <ol class="instruction-list">
-            <li>
-                <p>Select cell <span class="type-text">C15</span></p>
-            </li>
-            <li>
-                <p>Type<span class="type-text"> =SUM(</span> into that cell</p>
-            </li>
-            <li>
-                <p>Highlight cell <span class="type-text">C11</span> to <span class="type-text">C14</span></p>
-            </li>
-            <li>
-                <p>Press Enter</p>
-            </li>
-        </ol>
-
-        <p>This is just one of many functions that we can use to have Excel do calculations for us. We will explore the SUM funcion and more throughout the rest of the class.</p>
-
-        <div class=centered-image-small border>
-            <img src=images/functions-sum.png alt="Using sum in example">
-        </div>
-
-        <h3>Date and Time</h3>
-
-        <p>A common question people have when using Excel is how to work with time and dates. In the next several examples we will go over the basics of working with time in Excel.</p>
-
-        <ol class="instruction-list">
-            <li>
-                <p>Select cell <span class="type-text">B18</span></p>
-            </li>
-            <li>
-                <p>Type<span class="type-text"> =TODAY()</span> into that cell</p>
-            </li>
-            <div class=centered-image-small border>
-                <img src=images/functions-today.png alt="Using TODAY() in example">
-            </div>
-            <li>
-                <p>Notice how the current date is put into the cell. This is an example of a volatile function, meaning it will update itself whenever a worksheet is opened or changed unless otherwise specified. This can be both good and bad, so be careful when using volatile functions like this. </p>
-            </li>
-            <li>
-                <p>Now lets put in the 1st day of the next month into cell <span class="type-text">B19</span> </p>
-            </li>
-            <li>
-                <p>Finally in cell <span class="type-text">B20</span> put <span class="type-text">=B19-B18</span>. Note how this value will change if you open this file tommorow, or a week from now.</p>
-            </li>
-            <div class=centered-image-small border>
-                <img src=images/functions-rentdue.png alt="Diplaying rentdue">
-            </div>
-        </ol>
-
-        <p>Now lets take a look at the next table and do some more work with time.</p>
-
-        <ol class="instruction-list">
-            <li>
-                <p>Highlight cell <span class="type-text">A26</span> to <span class="type-text">B27</span></p>
-            </li>
-            <li>
-                <p>Go to the Home tab -> Number Pannel -> Select the dropdown menu and choose Time. Now these cells are formated for time. Consequently, you can use this same method to format cells for other values such as currency.</p>
-            </li>
-            <li>
-                <p>Now fill in each of the four cells with a Time In and Time Out. Notice the formating Excel uses for time. Note that if you had typed them in on your own Excel would have atomatically formated the cells to time. Also note that there needs to be a space between the time and AM/PM.</p>
-            </li>
-            <li>
-                <p>Select cell <span class="type-text">C26</span></p>
-            </li>
-            <li>
-                <p>Type<span class="type-text"> =(B23-A23)*24</span> into that cell. Notice how you need to multiply this value by 24. This is because Excel stores time values as decimal fractions of a 24 hour day. One hour is equal to 1/24th of a day. Thus, to get a whole number you must multiply the value by 24.</p>
-            </li>
-            <li>
-                <p>Do the same thing for cell <span class="type-text">C27</span></p>
-            </li>
-            <div class=centered-image-small border>
-                <img src=images/functions-time.png alt="Diplaying rentdue">
-            </div>
-        </ol>
-
-        <h3>Formatting</h3>
-
-        <p>In cells <span class="type-text">A29</span> to <span class="type-text">C34</span> we have an unfomatted table. Lets clean it up a bit to make it look nicer.</p>
-
-        <ol class="instruction-list">
-            <liv>
-                <p>Select cells <span class="type-text">A29</span> through <span class="type-text"> C29.</span></p>
-            </liv>
-
-            <li>
-                <p>In the Home Tab navigate to the Alignment section and click on the Merge & Center button. This button will take all of the highlighted cells and merge them into one cell and center the input inside the cell.</p>
-            </li>
-
-            <div class=centered-image-large border>
-                <img src=images/editing-mergetitle-1.png alt="Merge and Center">
-            </div>
-            <li>
-                <p>With the same cell selected, go to Home -> Formatting -> and choose the dropdown menu for formated cells. Select Heading 1.</p>
-            </li>
-            <div class=centered-image-large border>
-                <img src=images/editing-formattitle-1.png alt="Format Title">
-            </div>
-            <li>
-                <p>Select cells<span class="type-text"> A30</span> through <span class="type-text">C34</span></p>
-            </li>
-            <li>
-                <p>Go to Home -> Styles -> Format as Table -> Select a color scheme that you like</p>
-            </li>
-            <div class=centered-image-large border>
-                <img src=images/editing-formattable-1.png alt="Format Table">
-            </div>
-            <li>
-                <p>Notice how the table headings have dropdown arrows now. We will look into these more coming up.</p>
-            </li>
-        </ol>
-
-        <p>Congratulations! You now know some basics of Excel. Lets put what you learned to the test. In the table below try and replicate what we've done above, creating your own table with an Item, the Date it was sold, and the Price. Then calculate the total. Feel free to play around with values and formatting and be curious! </p>
-
-        <h3>Budget Worksheet</h3>
-
-        <ol class="instruction-list">
-            <li>
-                <p>Select the Budget worksheet in the Worksheet tab</p>
-            </li>
-            <li>
-                <p>Select cell <span class="type-text">B18</span></p>
-            </li>
-            <li>
-                <p>Type<span class="type-text"> =SUM(</span>into that cell</p>
-            </li>
-            <li>
-                <p>Highlight cell <span class="type-text">B3</span> to <span class="type-text">B11</span></p>
-            </li>
-            <li>
-                <p>Press Enter</p>
-            </li>
-        </ol>
-
-        <div class=centered-image-small border>
-            <img src=images/functions-sumexample-1.png alt="Using sum in example">
-        </div>
-
-        <ol class="instruction-list">
-            <li>
-                <p>Navigate to cell <span class="type-text">K7</span> and type <span class="type-text">=SU</span></p>
-            </li>
-            <p>A drop down menu will appear with all the functions in Excel's library that start with the letter "S". When a function is selected, a brief description of what the function does is provided.</p>
-            <li>
-                <p>Find the <span class="type-text">SUM</span> function</p>
-            </li>
-            <li>
-                <p>Double click it to select it</p>
-            </li>
-            <li>
-                <p>Select cells <span class="type-text">K4:K6</span></p>
-            </li>
-            <li>
-                <p>Press Enter</p>
-            </li>
-            <li>
-                <p>There should be a small green triangle in the top left corner of cell <span class="type-text">K7</span>. We will address this later in the manual.</p>
-            </li>
-            <div class=centered-image-small border>
-                <img src=images/functions-dropdownexample-1.png alt="Using dropdown for functions">
-            </div>
-            <p>Now we are going to enter a function using the Insert Function button</p>
-
-            <img class="sidebar-icon" src="images/functions-icon-1.png" alt="Using insert function button">
-            <li>
-                <p>Select cell <span class="type-text">K16</span> and click the Insert Function button.</p>
-            </li>
-
-
-            <p>A window will appear and allows you to search for any given function in Excel's complete function library. After a function is selected, it brings up a function arguments window that prompts for the necessary information.</p>
-            <li>
-                <p>Type "maximum" in the search for a function field at the top of the window</p>
-            </li>
-            <li>
-                <p>Click Go to search</p>
-            </li>
-            <li>
-                <p>Select <span class="type-text">MAX</span> from the search results</p>
-            </li>
-            <li>
-                <p>Click OK</p>
-            </li>
-            <p>The <span class="type-text">MAX</span> function reports the largest number from the select range</p>
-            <li>
-                <p>Delete the content in the Number1 field</p>
-            </li>
-            <li>
-                <p>Select cells <span class="type-text">B12:H15</span> in the workspace (move the Insert Function dialog box to the side if you can’t see the cells you need to select)</p>
-            </li>
-            <li>
-                <p>Click OK</p>
-            </li>
-            <li>
-                <p>Now try any of the different ways to enter a function that you just learned to fill out cells <span class="type-text">K17</span> (minimum) and <span class="type-text">K18</span> (average), using the minimum function for cells <span class="type-text">B3:H5</span> and the average function for cells <span class="type-text">B8:H9</span>, respectively. (<span class="type-text">K17</span> should be $9.54 and <span class="type-text">K18</span> should be $16.81)</p>
-            </li>
-            <p>The minimum function reports the smallest number from the selected range and the average function reports the sum of the selected range divided by the number of cells in that range.</p>
-        </ol>
-
-        <h3>Entering Functions Using Auto-fill</h3>
-
-        <p>AutoFill is a convenient feature that allows you to repeat a common formula multiple times without having to type it in again and again.</p>
-
-        <ol class="instruction-list">
-            <li>
-                <p>Select cell <span class="type-text">B18</span></p>
-            </li>
-            <li>
-                <p>Place your mouse over the dark green square in the bottom right corner of the active cell.</p>
-            </li>
-            <li>
-                <p>Once you see the black cross icon (changed from the white cross icon), click and drag the selection across to cell <span class="type-text">H18</span></p>
-            </li>
-            <li>
-                <p>Release the mouse</p>
-            </li>
-        </ol>
-
-        <div class=centered-image-large border>
-            <img src=images/functions-autofillexample-1.png alt="Using AutoFill">
-        </div>
-
-        <p>Notice how the function has been copied into the selected cells. This function also works for the formulas we mentioned previously. What we just did was a shortcut for a copy-and-paste operation. If you inspect the entries we filled into cells <span class="type-text">H5:H9</span> you will notice that we didn't copy the exact formula from cell <span class="type-text">H4</span>. Instead, each different formula contains a reference to two cells in the same row. This is because the cells in the formulas are relatively addressed to the cells in column H, not by their absolute location. We will discuss the issues of relative versus absolute referencing later.</p>
-
-        <h2>Absolute Cell Functions</h2>
-
-        <p>Up to this point, we have been using relative cell addresses to reference cells. This allowed us to use AutoFill in order to create the same formula for different data points. Now we will focus on absolute cell references. Absolute references are good when you need to reference the same cell from multiple locations, something that is not possible when using relative cell addressing. Let's try an example using relative cell addressing and see why we need to learn absolute.</p>
-        <h3>Calculating Amount in Bank (per month)</h3>
-        <ol class="instruction-list">
-            <li>
-                <p>In cell <span class="type-text">C20</span>, type <span class="type-text">=(B23+C22-C21)*(1 + K20)</span>. From here, we can use the AutoFill to fill in the cells horizontally.</p>
-            </li>
-            <li>
-                <p>Click on cell <span class="type-text">D20</span>. You will notice that cell <span class="type-text">K20</span> has become cell <span class="type-text">K21</span>.</p>
-            </li>
-            <li>
-                <p>Click on cell <span class="type-text">C20</span></p>
-            </li>
-            <li>
-                <p>Type $'s around the K.</p>
-            </li>
-            <li>
-                <p>Your function should look like this.</p>
-            </li>
-        </ol>
-
-        <p align=center class="type-text">= (B23+C22-C21)*(1 + $K$20)</p>
-
-        <p>The $'s are used to declare the absolute cell functions. A $ behind the alphabet letter signifies you wish to keep the references within the K column, and a $ behind the numerical value signifies that you wish to keep the reference within the 20 column. Now drag the function to cell <span class="type-text">H20</span> and notice that cell <span class="type-text">K20</span> stays constant. </p>
-
-        <h2>Understanding Functions</h2>
-
-        <p>It is easy to copy and paste functions, but being able to write them on your own will help you in the long run. The first step towards being able to write your own function is being able to understand them and what they are telling Excel to do. Let’s start with a basic IF function:</p>
-
-        <p align=center class="type-text">=IF(logical_test_value,value_if_true,value_if_false)</p>
-
-        <p>We can break down this function into several parts:</p>
-
-        <ul>
-            <li>
-                <p><b>=IF</b>: This tells Excel that you want to carry out the IF function</p>
-            </li>
-            <li>
-                <p>
-                    <b>logical_test_value</b>: This is the condition that you want to check. For instance, if you want to make sure that cell <span class="type-text">A1</span> is less than or equal to 7, you would replace this with <span class="type-text">A1</span>
-                    <=7.
-                </p>
-            </li>
-            <li>
-                <p><b>value_if_true</b>: This controls what will appear or occur if the logical test is true</p>
-            </li>
-            <li>
-                <p><b>value_if_false</b>: This controls what will appear or occur if the logical test is false</p>
-            </li>
-        </ul>
-
-        <h3>Calculating if you are going to England</h3>
-
-        <ol class="instruction-list">
-            <li>
-                <p>Click on cell <span class="type-text">K11</span>, for 'Saved', and enter in the value of <span class="type-text">H20</span></p>
-            </li>
-            <li>
-                <p>Now, to calculate 'Need', in cell <span class="type-text">K12</span> type <span class="type-text">= K10-K11</span></p>
-            </li>
-        </ol>
-
-        <p>Now we will see how the IF function in <span class="type-text">K13</span> works in our budget sheet.</p>
-
-        <p align=center class="type-text">=IF(K11>=K10,"YES!","NO!")</p>
-
-        <ul>
-            <li>
-                <p>This function is telling Excel the following</p>
-            </li>
-            <li>
-                <p>If the value in<span class="type-text"> K11</span> is greater than or equal to the value in<span class="type-text"> K10</span>, express <span class="type-text"> "YES!"</span>. If the value in<span class="type-text"> K11</span> is NOT greater than or equal to the value in<span class="type-text"> K10</span>, then express <span class="type-text"> "NO!"</span>.</p>
-            </li>
-            <li>
-                <p>It is possible to put mathematical equations, other functions, and text as these values. Only the logical_test_value cannot have text written in it. Also note that any written text has to be placed in quotation ("") marks.</p>
-            </li>
-        </ul>
-
-        <p>Note that not all functions follow this exact format. This is just used as a common example that you may encounter as you use Excel.</p>
-    </section>
-    <!--Formulas and Functions END-->
-    <!--Charts START-->
-    <section class="topic">
-        <H1>Basic Charts</H1>
-        <p>Occasionally, you may also want to look at your data in the form of a graph or a chart. Excel offers several different types of graphs and charts for you to interpret your data.</p>
-        <h3>Creating Charts (Including Styles and Moving)</h3>
-        <p>Let's create a graph using the data from the Budget worksheet.</p>
-        <ol class="instruction-list">
-            <li>
-                <p>Select the data from <span class="type-text">B23</span> horizontally to <span class="type-text">H23</span>.</p>
-            </li>
-            <li>
-                <p>Select the Quick Analysis button on the bottom right corner of your data.</p>
-            </li>
-            <li>
-                <p>Select Line Chart.</p>
-            </li>
-            <p>You can also create charts by using the Insert tab in the ribbon.</p>
-            <div class=centered-image-large border>
-                <img src=images/charts-quickanalysis-1.png alt="Quick analysis for making charts">
-            </div>
-            <p>A line chart will appear on-screen. Notice that the Y axis is the data that we selected earlier. The X axis, as we will name in a bit, are the months of the year. Now, let’s edit the chart title.</p>
-            <li>
-                <p>Select “Chart Title” and rename it "Money in the Bank".</p>
-            </li>
-            <li>
-                <p>Right click anywhere on the graph and select "Select Data". A new window should appear.</p>
-            </li>
-            <li>
-                <p>On the right side of the window, press the Edit button below Horizontal (Category) Axis Labels.</p>
-            </li>
-            <li>
-                <p>Highlight cells <span class="type-text">B2</span> to <span class="type-text">H2</span> horizontally. This is the range that you would like to name your axis with. Since these are bank statements, it would make sense to use the names of the months.</p>
-            </li>
-            <li>
-                <p>Hold Control as you select to highlight cells <span class="type-text">B3:B5</span>, <span class="type-text">B8:B9</span>, and <span class="type-text">B12:B15</span>.</p>
-            </li>
-            <li>
-                <p>Select the Insert Tab and click on the pie/doughnut.</p>
-            </li>
-            <li>
-                <p>Click 2D Pie</p>
-            </li>
-            <div class=centered-image-large border>
-                <img src=images/charts-inserttab-1.png alt="Inserting charts">
-            </div>
-            <li>
-                <p>Now let's try labelling the X axis properly. Double-click (or right-click) on the legend and click on the edit horizontal axis button.</p>
-            </li>
-            <li>
-                <p>
-                    Hold control and select cells <span class="type-text">A3:A5</span>, <span class="type-text">A8:A9</span>, and <span class="type-text">A12:A15</span>. (It is important to highlight the cells in the same order vertically as you chose the numeric values to ensure that each x-axis label corresponds to the correct value color-wise in the chart.)
-                </p>
-            </li>
-            <div class=centered-image-large border>
-                <img src=images/Charts-PieChart-1.png alt="Pie chart">
-            </div>
-            <p>Let’s say that we want to move this chart to a new worksheet for further analysis. We can do that as well.</p>
-            <li>
-                <p>Select the June Spending Chart and navigate to the Design Tab.</p>
-            </li>
-            <li>
-                <p>On the right side, locate the Move Chart button in the Location panel.</p>
-            </li>
-            <li>
-                <p>Select Move Chart. You have two options to choose from. You can either place an object in a different worksheet (Object in:) or make a new worksheet altogether (New Sheet:).</p>
-            </li>
-            <li>
-                <p>Click on New Sheet:</p>
-            </li>
-            <li>
-                <p>Name it "June Spending".</p>
-            </li>
-
-        </ol>
-        <h2>Editing Source Data</h2>
-        <p>This is especially helpful if you would like more than one line of data on a chart. For our exercises, we will walk through it, but we will not implement it.</p>
-        <ol class="instruction-list">
-            <li>
-                <p>Select your chart by clicking on it.</p>
-            </li>
-            <li>
-                <p>Click on the Design Tab underneath Chart Tools.</p>
-            </li>
-            <li>
-                <p>Within the Design Tab, you can click on Select Data from the Data panel. A window should appear on-screen.</p>
-            </li>
-            <li>
-                <p>On the left side, you have several options to select your data.</p>
-            </li>
-            <div class=centered-image-medium border>
-                <img src=images/charts-editingdata-1.png alt="Editing chart data">
-            </div>
-            <li>
-                <p>Select Edit and then another window should pop up. From there, you can highlight your data.</p>
-            </li>
-        </ol>
-        <h2>Chart Aesthetics</h2>
-        <p>Now that the charts are formatted the way we like them. Let's make them aesthetically appealing. This will be especially useful for charts that have a lot of data points or have a lot to present.</p>
-        <h3>Editing the Chart Style and Layout</h3>
-        <ol class="instruction-list">
-            <li>
-                <p>Select the chart you want to edit (either chart will do).</p>
-            </li>
-            <li>
-                <p>On the right-hand side, there should be three chart buttons.</p>
-            </li>
             <ul>
                 <li>
-                    <p><b>Chart Elements: </b> Adds several chart elements, such as title and axis labels</p>
+                    <p>Basic computer operation skills</p>
                 </li>
                 <li>
-                    <p><b>Chart Styles: </b>Changes the color scheme and style of the selected chart</p>
-                </li>
-                <li>
-                    <p><b>Chart Filters: </b>Edits which data points or names are visible on the chart</p>
+                    <p>Access to Microsoft Excel 2013</p>
                 </li>
             </ul>
-            <li>
-                <p>Click Chart Styles</p>
-            </li>
-            <li>
-                <p>Choose a fantastic chart style and color scheme</p>
-            </li>
-        </ol>
-        <h3>Editing Axis</h3>
-        <b>You will probably notice that a lot of the chart elements can be edited by simply double-clicking the point of interest and using the sidebar to fine tune your element.</b>
-        <ol class="instruction-list">
-            <li>
-                <p>
-                    Select Add Chart Element in the Chart Layouts panel within the Design Tab.
-                </p>
-            </li>
-            <li>
-                <p>From the drop down menu, select Axis Title and choose Primary Horizontal.</p>
-            </li>
-            <li>
-                <p>Repeat steps 1 and 2 to choose Primary Vertical.</p>
-            </li>
-            <li>
-                <p>Double click the horizontal axis title and type "Time (in months)"</p>
-            </li>
-            <li>
-                <p>Do the same for the vertical axis title and type "Money accumulated"</p>
-            </li>
-            <li>
-                <p>To adjust the minimum and the maximum values of the axis, double-click the left axis. A panel should appear on the right.</p>
-            </li>
-            <li>
-                <p>Select the Axis Options button.</p>
-            </li>
-            <li>
-                <p>Select the drop down arrow to the left of Axis Options</p>
-            </li>
-            <li>
-                <p>Change the minimum and maximum bounds to make the graph look nice. Changes in the minimum and maximum units will change the amount of space between each horizontal line.</p>
-            </li>
-        </ol>
-        <h3>Editing Gridlines</h3>
-        <ol class="instruction-list">
-            <li>
-                <p>Double click the gridlines on the Money in the Bank graph. If the right-hand panel is still on screen, it should have the title "Format Major Gridlines".</p>
-            </li>
-            <li>
-                <p>Select the Gradient line bullet point.</p>
-            </li>
-            <li>
-                <p>Change the Preset Gradients to something that looks nice to you.</p>
-            </li>
-            <li>
-                <p>There are many other options to optimize your gridlines, but these options are some basic choices.</p>
-            </li>
-        </ol>
-        <h3>Editing the Legend</h3>
-        <ol class="instruction-list">
-            <li>
-                <p>Double click the legend on the June Spending pie chart and a right-hand panel should show on screen if it isn't already.</p>
-            </li>
-            <li>
-                <p>Select the Legend Options button.</p>
-            </li>
-            <li>
-                <p>Change the Legend Position by selecting the Right option. The legend should appear on the right side.</p>
-            </li>
-            <li>
-                <p>Select the Fill & Line button.</p>
-            </li>
-            <li>
-                <p>Change the Border to Solid Line.</p>
-            </li>
-            <li>
-                <p>Change the color by selecting the drop down paint bucket icon.</p>
-            </li>
-        </ol>
-        <h3>Displaying Values on the Chart</h3>
-        <ol class="instruction-list">
-            <li>
-                <p>Select the June Spending pie chart.</p>
-            </li>
-            <li>
-                <p>From the chart buttons, choose the Chart Elements button.</p>
-            </li>
-            <li>
-                <p>Select Data Labels.</p>
-            </li>
-            <li>
-                <p>Select the Data Labels on the chart.</p>
-            </li>
-            <li>
-                <p>Select the Label Options in the right hand sidebar.</p>
-            </li>
-            <li>
-                <p>Change the position of the Data Labels to Below.</p>
-            </li>
-        </ol>
-    </section>
-    <!--Charts END-->
-    <!--Importing Data START-->
-    <!--
-                <section class="topic">
-                    <H1>Importing Data</H1>
-                    <p>In business, research, and other practical situations, large data sets are very common. It would be very time consuming and error prone to insert thousands of lines of data by hand. Often times, data that needs to be inserted is already available in an electronic format; this could be from a larger database or data gathered from equipment in an experiment. There are common file types for transferring this data between programs and into Excel. One of these common types is a delimited text file with file extension .txt.</p>
-                    <h3>Importing a Delimited File</h3>
-                    <p>We will complete our class list by inserting a text file that contains a compiled list of our remaining items. The items list is a text file (.txt) that we will import into a format that Excel can use. A delimiter is used in the file to distinguish between the columns and rows of data. We will use the text import wizard to identify the delimiters and put the data into an Excel spreadsheet.</p>
-                    <ol class="instruction-list">
-                        <li>
-                            <p>Select the Classes worksheet.</p>
-                        </li>
-                        <li>
-                            <p>Before we get started, let's fill out the maximum and minimum values beneath the Breadth Legend by inserting we learned previously.</p>
-                        </li>
-                        <li>
-                            <p>Once you are done with that, click on the File Tab and click Open.</p>
-                        </li>
-                        <li>
-                            <p>Select All Files from the Files of Type drop down menu (this allows us to view files other than .xlsx files, such as .txt)</p>
-                        </li>
-                        <div class=centered-image-small border>
-                            <img src=images/importing-selectfiles-1.png alt="Importing files">
-                        </div>
-                        <li>
-                            <p>Select text file named <span class="type-text">excel1-classes.txt</span></p>
-                        </li>
-                        <li>
-                            <p>Click Open</p>
-                        </li>
-                        <li>
-                            <p>Make sure that the Delimited button is checked and that the file import is starting at row 1.</p>
-                        </li>
-                        <div class=centered-image-medium border>
-                            <img src=images/importing-delimited-1.png alt="Importing delimited files Wizard 1">
-                        </div>
-                        <li>
-                            <p>Click the Next button</p>
-                        </li>
-                        <li>
-                            <p>Make sure that only the Semicolon box is checked</p>
-                        </li>
-                        <p>This tells us what our delimiter, or divider, is in the text file. In most cases the delimiter will be a comma or semicolon. If you ever receive this type of file, the person or program you get it from should tell you what the delimiter is. You can also look at the Data Preview to see how Excel is splitting up the data to make sure it looks correct.</p>
-                        <div class=centered-image-medium border>
-                            <img src=images/importing-delimited-2.png alt="Importing delimited files wizard 2">
-                        </div>
-                        <li>
-                            <p>Click Next</p>
-                        </li>
-                        <li>
-                            <p>Click Finish</p>
-                        </li>
-                        <p>We now have a new workbook open titled "items" and it contains all of our imported data.</p>
-                    </ol>
-                    <h3>Copying the Data to Our Class List</h3>
-                    <ol class="instruction-list">
-                        <li>
-                            <p>Click in cell <span class="type-text">A1</span> and press Shift+Ctrl+End</p>
-                        </li>
-                        <p>This is a shortcut to select a boxed region. The command selects a range of filled in cells until it reaches an empty row or column. In this case, it selects three blank columns (D, F, and G), these columns simply have a single space in them. This is for formatting reasons when this data is inserted into our existing spreadsheet.</p>
-                        <li>
-                            <p>Copy the cells selected</p>
-                        </li>
-                        <li>
-                            <p>Switch back to the <span class="type-text">Excel1-Classes.xlsx</span> worksheet and select cell <span class="type-text">A14</span></p>
-                        </li>
-                        <li>
-                            <p>Right-click in this cell and select Insert Copied Cells...</p>
-                        </li>
-                        <p>Notice that our functions for the maximum and minimum values have green tabs in the upper left hand corners of their cells. This is similar to the green tab that we saw in our previous worksheet. These tabs allow us to update the functions for the new data we just inserted. When selected, these cells display a caution sign with an exclamation point in them that allows us to update the function to include the copied cells.</p>
-                        <li>
-                            <p>For all cells marked with a green triangle, click on the exclamation point sign</p>
-                        </li>
-                        <li>
-                            <p>Select "Update Formula to Include Cells"</p>
-                        </li>
-                    </ol>
-                    <div class=centered-image-medium border>
-                        <img src=images/importing-copyingcells-1.png alt="Copying cells">
-                    </div>
-                    <p>The functions are updated appropriately to include our new data. We don't want to update the formula in our previous worksheet because Excel believes that we have forgotten the value for "Study Abroad Cost". However, we have purposely left it out of the equation because it has nothing to do with the initial amount of money in our bank.</p>
-                </section>
-    -->
-    <!--Importing Data END-->
-    <!--Sorting and Filtering START-->
-    <section class="topic">
-        <h1>Viewing, Sorting, & Filtering Data</h1>
-        <p>With Excel capable of holding millions of pieces of data, it can become overwhelming to use its features without having knowledge of its viewing and sorting options. Viewing an overwhelming data set can become manageable and efficient by utilizing a few of Excel's simple features.</p>
-        <h3>Freezing Panes</h3>
-        <p>You will notice that as you scroll down the spreadsheet, you lose the column headings at the top of the worksheet (Store Name, Item Cost, etc.). These would be helpful references if you are viewing an item at the bottom of the list but unfortunately, since our list is so large, it isn't possible to view them. Freezing panes is a solution to this problem</p>
-        <ol class="instruction-list">
-            <li>
-                <p>Click in cell <span class="type-text">A1</span></p>
-            </li>
-            <li>
-                <p>Select the View Tab</p>
-            </li>
-            <li>
-                <p>Select the Freeze Panes button from the Window panel</p>
-            </li>
-            <li>
-                <p>Click Freeze Panes</p>
-            </li>
-        </ol>
-        <p>This "freezes" everything above the active cell <span class="type-text">A3</span>; so now, when we scroll down the worksheet, all of our column headings remain at the top of our screen. To unfreeze the panes, select the Freeze Panes button from the Window panel again and click Unfreeze Panes.</p>
-        <h3>Filtering Data</h3>
-        <p>Sorting is useful but can be a little inconvenient if you just need quick looks at data in a certain way. Filters can be applied to our data to make it easier to view specific categories of information. A filter shows only the information that we ask for and hides the other data. Let's explore a few Filter options with our class list.</p>
-        <ol class="instruction-list">
-            <li>
-                <p>Select cells <span class="type-text">A1:G1</span>.</p>
-            </li>
-            <li>
-                <p>From the Data Tab, click the Filter button. You should now see small arrow in each column header. Clicking on these arrows will open a filter menu for that header.</p>
-            </li>
-            <div class=centered-image-small border>
-                <img src=images/filtering-dropdownexample-1.png alt="Filter dropdown ">
+        </section> 
+        <!--Introduction END-->
+
+        <!--Navigating the Excel Environment START-->
+        <section class="topic">
+            <h1>Navigating the Excel Environment</h1>
+
+            <p>The Excel Interface from Excel 2010 to Excel 2013 for PC has changed aesthetically, but it has a similar layout. If you are familiar with Excel 2010, there should not be problems for you to adapt to the Excel 2013 layout.</p>
+
+            <h2>Excel Interface</h2>
+            <p><span class="highlight">To begin, open Excel on your computer.</span> If you are having any problems finding Excel, you can use the search bar under the start menu.</p>
+            <p>The following terms describe the basic features of the Excel environment that we will use today:</p>
+
+            <ul>
+                <li>
+                    <p><b>Worksheet: </b>the Excel workspace is a grid of cells called a worksheet or a spreadsheet</p>
+                </li>
+
+                <li>
+                    <p><b>Cells: </b>contain data such as numbers, text, or formulas</p>
+                </li>
+
+                <li>
+                    <p><b>Columns: </b>vertical sections of the cells (up-and-down)</p>
+                </li>
+
+                <li>
+                    <p><b>Rows: </b>horizontal sections of the cells (right-to-left)</p>
+                </li>
+
+                <li>
+                    <p><b>Active cell </b>the active cell is the currently selected cell which is indicated by the bold box around it. When commands are performed, they are performed on the current active cell.</p>
+                </li>
+
+                <li>
+                    <p><b>Name box: </b>displays the unique name for the active cell. Each cell has a unique name containing a letter and a number that refer to which column and row intersect to form the cell</p>
+                </li>
+
+                <li>
+                    <p><b>Formula bar: </b>location where new data or formulas can be entered to edit the active cell's data, located above the worksheet</p>
+                </li>
+
+                <li>
+                    <p><b>Worksheet Tabs: </b>additional worksheets that are available for use in the current Excel document</p>
+                </li>
+
+                <li>
+                    <p><b>View Magnification: </b>allows user to increase or decrease the "zoom" level of the workspace, does not change the actual size of the fonts and images that will print</p>
+                </li>
+
+                <li>
+                    <p><b>Scroll bars: </b>allows user to pan to cells that currently aren't visible in the workspace</p>
+                </li>
+
+                <li>
+                    <p><b>Ribbon, Tabs, and Panels: </b>the bar above the worksheet and formula bar with all available commands, divided into tabs and each tab is divided into panels</p>
+                </li>
+
+                <li>
+                    <p><b>Help button: </b>links to Microsoft's documentation and troubleshooting resources</p>
+                </li>
+            </ul>
+
+            <h3>Getting Familiar with Excel</h3>
+            <ol class="instruction-list">
+                <li>
+                    <p>Click in a few different cells to see the active cell change. Notice how the Name Box (left of the Formula Bar) changes depending on the cell selected.</p>
+                </li>
+                <li>
+                    <p>Press the up, down, left, and right arrow keys to move one cell in that direction at a time.</p>
+                </li>
+                <li>
+                    <p>Use the scroll bars (the actual bars of the arrows) to move to a different area of the worksheet that is off-screen. Also, you can use the scroll and click-wheel of the mouse.</p>
+                </li>
+                <li>
+                    <p>Use the view magnification to try changing the zoom level of the worksheet.</p>
+                </li>
+                <li>
+                    <p>Press Ctrl + Home to return to cell <span class="type-text">A1</span></p>
+                </li>
+            </ol>
+
+            <p>When we refer to cells in Excel, they are given a letter and a number (like how <span class="type-text">A1</span> is referenced above). The letter (A) describes the column A and the number 1 refers to row 1.</p>
+            <p>Similarly, when we refer to a set of cells, we use the colon (:) to describe them. For example, if we want to refer to cells <span class="type-text">A1</span> to <span class="type-text">A26</span>, we would describe it as <span class="type-text">A1:A26</span>. If we want to refer to a box of cells, we would describe them as [upper left cell]:[lower right cell]. So, if we looked at cells <span class="type-text">A1</span>, <span class="type-text">A2</span>, <span class="type-text">A3</span> <span class="type-text">B1</span>, <span class="type-text">B2</span>, and <span class="type-text">B3</span>; we would refer to them as <span class="type-text">A1:B3</span>.</p>
+
+            <div class=centered-image-large border>
+                <img src=images/interface-key-1.png alt="Basic excel interface">
             </div>
-            <li>
-                <p>Click on the drop-down arrow for "Semester"</p>
-            </li>
-            <li>
-                <p>Uncheck Select All.</p>
-            </li>
-            <li>
-                <p>Then select Fall</p>
-            </li>
-            <li>
-                <p>Click OK.</p>
-            </li>
-            <p>You should now only see all of the classes offered in the Fall semester. Note that all of your data is still present, but it is currently hidden.</p>
-            <li>
-                <p>To see everything again, click Select All on the Category filter menu</p>
-            </li>
-            <li>
-                <p>Click OK.</p>
-            </li>
-            <p>A variety of filters can be applied to your data depending on your needs or desires. We can also filter our data based on specific criteria applied a column or in an alphabetical or numerical order. Take a few moments to explore some options or ask your instructor for more information.</p>
-            <li>
-                <p>To remove all filters, click the Filter button in the Data Tab.</p>
-            </li>
-        </ol>
-        <h3>Sorting Data</h3>
-        <p>Often times you will have a large amount of data and you will want to sort it in some logical way (alphabetically, numerically, etc.). We can sort our data in multiple levels by using the Sort feature.</p>
-        <ol class="instruction-list">
-            <li>
-                <p>Select cells <span class="type-text">A1:G47</span> (for all class titles and descriptions)</p>
-            </li>
-            <li>
-                <p>On the Data Tab, click the Sort button.</p>
-            </li>
-            <li>
-                <p>Check the option "My data has headers" box in the "Sort" dialog box that appears. This allows us to user our header names as the sort options.</p>
-            </li>
-            <div class=centered-image-medium border>
-                <img src=images/sorting-sortingbutton-1.png alt="Sort button">
-            </div>
-            <li>
-                <p>Under the “Column: Sort by” menu choose Semester.</p>
-            </li>
-            <li>
-                <p>Under the “Sort On” menu choose Values</p>
-            </li>
-            <li>
-                <p>Under the “Order” menu choose A to Z.</p>
-            </li>
-            <li>
-                <p>Click OK</p>
-            </li>
-            <p>We have organized our data alphabetically by Department. We can add as many levels of sorting as desired.</p>
-            <li>
-                <p>Try to add another level of sorting, such as by Credit from Largest to Smallest.</p>
-            </li>
-        </ol>
-    </section>
+            <!--TODO: add section for help (File -> Options -> Quick Access Toolbar -> All Commands -> Help -> add -> OK) -->
+            <h2>Workbooks vs. Worksheets</h2>
+            <p>A single Excel file is called a "workbook" and by default contains three "worksheets". Each worksheet contains a unique workspace where data can be stored and manipulated. Data can be linked between worksheets if desired. All the worksheets within a workbook can be viewed near the bottom of the workbook in an area called the "worksheet tabs".</p>
+            <br>
+
+            <h3>Inserting and Deleting a Worksheet</h3>
+            <ol class="instruction-list">
+                <li>
+                    <p>Click on the small insert worksheet icon.</p>
+                </li>
+                <li>
+                    <p>Double-click on the worksheet tab and type in the desired name to rename the worksheet.</p>
+                </li>
+                <li>
+                    <p>Right-click on the worksheet tab and select Delete to permanently remove that worksheet.</p>
+                </li>
 
 
-    <section class="topic">
-        <h1>Saving</h1> <!--saving edit-->
-        <p>From the File tab you can save, print, and open workbooks. You can also access special options such as add-ins and customizing your ribbons.</p>
-        <h3>Saving Workbooks</h3>
-        <ol class="instruction-list">
-            <li>
-                <p>To save your workbook, click the File Tab</p>
-            </li>
-            <li>
-                <p>Click Save As to save your workbook as new, unique file</p>
-            </li>
-            <li>
-                <p>Under the "Save as type", select "Excel Workbook".</p>
-            </li>
-            <li>
-                <p>Click Save</p>
-            </li>
-        </ol>
+        </section> 
+
+
+            <section class="topic"> 
+                <h1>Entering and Editing Data</h1>
+                <p>In its most basic form, Excel is an interface that allows you to store data in an organized manner. The word "data" is used here in a broad sense; it can apply to any combination of numeric and textual information. In order to use any of Excel's abilities, you must understand how to insert data in an easy to access and logical manner.</p>
+                <h2>Inserting Data into a Cell</h2>
+                <p>For any tool in Excel, there are most likely multiple ways to access it. This may include buttons on the ribbon, keyboard shortcuts, and quick-access buttons within the interface. There is often not a right or wrong way to use Excel's tools and functions and instead it is left up to user preference. You are encouraged to try each exercise in this manual using multiple methods to determine the way that works best for you.</p>
+                <ol class="instruction-list">
+                    <li>
+                        <p>Open the <span class="type-text">Excel1-class-file.xlsx</span> file</p>
+                    </li>
+                </ol>
+                <br>
+                <p>There are three different ways to enter or edit data in a cell. Each will be briefly discussed and you can choose the method you like best;</p>
+                <ul>
+                    <li>
+                        <p><b>Click & Type: </b>The first way to enter data is to click in a cell and simply begin to type.</p>
+                    </li>
+                    <li>
+                        <p><b>Formula Bar: </b>The second way to enter data is to click in the formula bar. This will activate a blinking cursor and data can be typed in.</p>
+                    </li>
+                    <li>
+                        <p><b>Double-Click: </b>Lastly, double-clicking in an active cell will activate a blinking cursor to allow you to enter data also.</p>
+                    </li>
+                </ul>
+                <p>After the desired data is typed in, the Enter key can be pressed to accept the entry into the cell. Alternatively, you may click the small check-mark button to the left of the formula bar to accept the data as well. If you change your mind about inserting this data, you can instead press the escape key or click the X button next the formula bar to revert the cell to its previous state. Now that these methods have been explored, let’s get started.</p> <!--Start edit-->
+                
+            </section> 
+            <!--Navigating the Excel Environment END-->            
+
+            <!--Formulas and Functions START-->
+            <section class="topic"> 
+                <h1>Using Formulas and Functions</h1>
+                <p>Excel's main features are its ability to work with mathematical and logical operations to do calculations for you. This allows the user to not only organize data in a spreadsheet but also to perform calculations, in order to create new and more useful data. Excel is a powerful utility that is able to update calculations and formulas as your data changes. We will soon see that this happens quickly and easily without a noticeable delay</p>
+                <h2>Basic Formulas</h2>
+                <p>Excel's calculation abilities are split into two subsets: formulas and functions. A formula is a basic mathematical statement that consist of addition, subtraction, multiplication, and division. These are things you could do on a basic calculator but Excel has the functionality built-in.</p>
+                <br>
+                <p>The basic operations used for Excel's formulas are:</p>
+                <ul>
+                    <li>
+                        <p>+ : plus sign used for addition</p>
+                    </li>
+                    <li>
+                        <p>- : minus sign used for subtraction</p>
+                    </li>
+                    <li>
+                        <p>* : asterisk used for multiplication</p>
+                    </li>
+                    <li>
+                        <p>/ : forward slash used for division</p>
+                    </li>
+                    <li>
+                        <p>= : equals sign used to start any formula or function</p>
+                    </li>
+                </ul>
+                <p>The equals sign is a key part of every formula or function. By putting an "=" as the first character in a cell, Excel enters its calculation mode and treats anything that appears after it as an expression that it can evaluate. It will become second nature for you to automatically put the "=" as the first thing whenever you want Excel to do a calculation for you.</p>
+
+                <h3>Start Worksheet</h3> <!--start worksheet-->
+
+                <ol class="instruction-list">
+                    <li>
+                        <p>Open the class files for Excel 1. You can find these files on canvas.</p>
+                    </li>
+                    <li>
+                        <p>Navigate to the Start worksheet tab in the bottom left of Excel.</p>
+                    </li>
+                    <!--
+        <li>
+            <p>Click the New Worksheet button at the bottom of the screen.</p>
+        </li>
+
         <div class=centered-image-large border>
-            <img src=images/saving-menu-1.png alt="Saving menu">
+            <img src=images/formulas-newworksheet-1.png alt="Making a new worsheet">
         </div>
-        <!--printing
-                        <h3>Printing</h3>
-                        <p>Printing in Excel can often be a painstaking process without the proper precautions. We will be using the Classes worksheet for this exercise.</p>
-                        <p>The first step in printing an Excel file is to preview how the page will look before it is sent to the printer. To accomplish this, we can use the Page Layout View.</p>
-                        <ol class="instruction-list">
-                            <li>
-                                <p>In the View Tab select Page Layout from workbook Views panel. Notice that, by default, our data will be separated when printed. To change the default let's switch to a different view.</p>
-                            </li>
-                            <li>
-                                <p>Select Page Break Preview from the workbook views panel.</p>
-                            </li>
-                            <li>
-                                <p>Click and hold on the vertical blue dotted lines.</p>
-                            </li>
-                            <li>
-                                <p>Click and Drag the line right until it meets the solid single blue line at the edge of the spreadsheet We are now left with one page containing all of our information. We can split it into two pages to make the data more readable. This is more preferable for pages that have longer lists of information.</p>
-                            </li>
-                            <li>
-                                <p>Click and Drag the bottom blue line down and then release</p>
-                            </li>
-                            <li>
-                                <p>Continue this process until you can see the dotted line and two pages are displayed.</p>
-                            </li>
-                            <li>
-                                <p>Now, resize the pages so that you have Fall classes on page 1 and Spring classes on page 2.</p>
-                            </li>
-                        </ol>
-                        <h3>Page Setup</h3>
-                        <p>If we printed as is, the data on the second page would not have headers. This would lead to the same problem we had before we used 'freeze panes'; it would be difficult to know which header the column of data belongs to. We will instead configure our plot so that the first and second rows appear on every sheet.</p>
-                        <ol class="instruction-list">
-                            <li>
-                                <p>In Page Layout Tab, select Print Titles</p>
-                            </li>
-                            <li>
-                                <p>Under the Sheet Tab, click in the Rows to repeat at top field.</p>
-                            </li>
-                            <li>
-                                <p>In the spreadsheet, select Row 1</p>
-                            </li>
-                            <li>
-                                <p>Click OK</p>
-                            </li>
-                            <li>
-                                <p>Select the Page Layout view to see your changes Since this isn't ideal for our data set, return to the page break preview in the View tab and place everything back on one page. From there, we can still make the page look more professional by changing the page orientation, print scale and adding a footer.</p>
-                            </li>
-                            <li>
-                                <p>Select the Page Layout Tab</p>
-                            </li>
-                            <li>
-                                <p>In the Page Setup panel, click on the Orientation button and choose Landscape from the drop down menu.</p>
-                            </li>
-                            <li>
-                                <p>Enter a value of 85% in the Scale field in the Scale to Fit panel to change the print size.
-                                </p>
-                            </li>
-                            <li>
-                                <p>Scroll to the bottom of a page in Page layout view and click the Click to add footer</p>
-                            </li>
-                            <li>
-                                <p>In the Design tab, select Page Number from the Header and Footer Elements panel</p>
-                            </li>
-                            <li>
-                                <p>Select the empty space next to the right of the footer box and select the Current Date element</p>
-                            </li>
-                        </ol>
-                        <div class=centered-image-large border>
-                            <img src=images/pagesetup-ribbon-1.png alt="Page Setup ribbon">
-                        </div>
-                        <p>We finally have a good scale and orientation. Also, our headings appear on both pages and we can see our footer. The document can now be printed from the File tab where there are a few other settings that can be controlled as well</p>
+
+
+    <li>
+        <p>Enter a numerical value for cells <span class="type-text">A1</span>, <span class="type-text">A2</span>, <span class="type-text">A3</span>, <span class="type-text">A4</span>, <span class="type-text">B1</span>, <span class="type-text">B2</span>, <span class="type-text">B3</span>, and <span class="type-text">B4</span>.</p>
+    </li>
         -->
-        <h3>Closing Excel</h3>
-        <ol class="instruction-list">
-            <li>
-                <p>Select the File Tab (backstage view)</p>
-            </li>
-            <li>
-                <p>Save your workbook</p>
-            </li>
-            <li>
-                <p>Exit Excel by selecting the Exit button at the bottom of the left-side menu</p>
-            </li>
-        </ol>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p>For Excel support and more information visit <a href="https://support.office.com/en-us/excel">support.office.com/en-us/excel</a>. Thank you for attending Excel 1. We look forward to seeing you in Excel 2: Functions, Excel 2: Analysis, Excel 2: Data Visualization, and many other Software Training for Students classes in addition to our Ask a Trainer sessions. All of these services can be accessed at our website, <a href="https://wisc.edu/sts">wisc.edu/sts</a>.</p>
-    </section>
-    <!--Sorting and Filtering END-->
-    <!--Topics End-->
-</body>
-</html>
+                    <li>
+                        <p>Select cell <span class="type-text">B3</span>.</p>
+                    </li>
+                    <li>
+                        <p>Type <span class="type-text">=E3+E4</span> into the cell and press enter.</p>
+                    </li>
+                    <p>You have just successfully entered your first Excel Formula! You should get the sum of <span class="type-text">E3</span> and <span class="type-text">E4</span> in cell <span class="type-text">B3</span>. Now let's try a different way of entering a formula</p> <!-- edits-->
+                    <li>
+                        <p>Select cell <span class="type-text">B4</span></p>
+                    </li>
+                    <li>
+                        <p>Type <span class="type-text">=</span></p>
+                    </li>
+                    <li>
+                        <p>Click on cell <span class="type-text">E3</span></p>
+                    </li>
+                    <li>
+                        <p>Type <span class="type-text">*</span></p>
+                    </li>
+                    <li>
+                        <p>Select cell <span class="type-text">E4</span></p>
+                    </li>
+                    <p><span class="type-text">E3</span> should now be highlighted while the same thing happens to <span class="type-text">E4</span> This can help you visually see what the formula is referencing. As you add more cell references in the same formula, each will be highlighted different color.</p>
+
+                    <div class=centered-image-large border>
+                        <img src=images/formulas-example-1.png alt="Example of using formulas"> <!--change image-->
+                    </div>
+
+                    <li>
+                        <p>Press Enter to see the result. It should be the product of cells <span class="type-text">E3</span> and <span class="type-text">E4</span>.</p>
+                    </li>
+                    <li>
+                        <p>Now fill out the rest of the table, cells <span class="type-text">B5</span> through <span class="type-text">B7</span> using whichever method you find easier.</p>
+                    </li>
+                </ol>
+                <!-- put in SUM, date and time, fill out the timesheet table, and have them create their own table.-->
+                <h2>Basic Functions</h2>
+
+                <p>Functions can serve the same purpose as formulas but are usually shorter and easier to enter. Functions are built-in calculations that Excel comes packaged with that allow you to execute math & trig functions, logical functions, text manipulation, financial functions, and much more. Here, we will explore the most commonly used and basic functions.</p>
+
+                <h3>Viewing and Entering Functions</h3>
+
+                <p>There are three common ways to enter functions that will be reviewed here: typing the complete function in, using the drop-down menu suggestions, and using the insert function library. We're going to enter a <span class="type-text">SUM</span>  function, which adds the integer values of the cells highlighted. Note that this function only works if there are integer values within the cell.</p>
+
+                <ol class="instruction-list">
+                    <li>
+                        <p>Select cell <span class="type-text">C15</span></p>
+                    </li>
+                    <li>
+                        <p>Type<span class="type-text"> =SUM(</span> into that cell</p>
+                    </li>
+                    <li>
+                        <p>Highlight cell <span class="type-text">C11</span> to <span class="type-text">C14</span></p>
+                    </li>
+                    <li>
+                        <p>Press Enter</p>
+                    </li>
+                </ol>
+                
+                <p>This is just one of many functions that we can use to have Excel do calculations for us. We will explore the SUM funcion and more throughout the rest of the class.</p>
+
+                <div class=centered-image-large border>
+                    <img src=images/functions-sum.png alt="Using sum in example">
+                </div>
+                
+                <h3>Date and Time</h3>
+                
+                <p>A common question people have when using Excel is how to work with time and dates. In the next several examples we will go over the basics of working with time in Excel.</p>
+                
+                <ol class="instruction-list">
+                    <li>
+                        <p>Select cell <span class="type-text">B18</span></p>
+                    </li>
+                    <li>
+                        <p>Type<span class="type-text"> =TODAY()</span> into that cell</p>
+                    </li>
+                    <div class=centered-image-large border>
+                    <img src=images/functions-today.png alt="Using TODAY() in example">
+                </div>
+                    <li>
+                        <p>Notice how the current date is put into cell <span class="type-text">B18</span>. This is an example of a volatile function, meaning it will update itself whenever a worksheet is opened or changed unless otherwise specified. This can be both good and bad, so be careful when using volatile functions like this. </p>
+                    </li>
+                    <li>
+                        <p>Now lets put in the 1st day of the next month into cell <span class="type-text">B19</span>. To do this type in the format MM/DD/YYYY.</p>
+                    </li>
+                    <li>
+                        <p>Finally in cell <span class="type-text">B20</span> put <span class="type-text">=B19-B18</span>. Note how this value will change if you open this file tommorow, or a week from now.</p>
+                    </li>
+                    <div class=centered-image-large border>
+                    <img src=images/functions-rentdue.png alt="Diplaying rentdue">
+                </div>
+                </ol>
+                
+                <p>Now lets take a look at the next table and do some more work with time.</p>
+                
+                <ol class="instruction-list">
+                    <li>
+                        <p>Highlight cell <span class="type-text">A6</span> to <span class="type-text">B27</span></p>
+                    </li>
+                    <li>
+                        <p>Go to the Home tab -> Number Pannel -> Select the dropdown menu and choose Time. Now these cells are formated for time. Consequently, you can use this same method to format cells for other values such as currency.</p>
+                    </li>
+                    <li>
+                        <p>Now fill in each of the four cells (<span class="type-text">A26</span>-<span class="type-text">B27</span>) with a Time In and Time Out. Notice the formating Excel uses for time. Note that if you had typed them in on your own Excel would have atomatically formated the cells to time. Also note that there needs to be a space between the time and AM/PM.</p>
+                    </li>
+                    <li>
+                        <p>Select cell <span class="type-text">C26</span></p>
+                    </li>
+                    <li>
+                        <p>Type<span class="type-text"> =(B26-A26)*24</span> into that cell. Notice how you need to multiply this value by 24. This is because Excel stores time values as decimal fractions of a 24 hour day. One hour is equal to 1/24th of a day. Thus, to get a whole number you must multiply the value by 24.</p>
+                    </li>
+                    <li>
+                        <p>Do the same thing for cell <span class="type-text">C27</span></p>
+                    </li>
+                    <div class=centered-image-large border>
+                    <img src=images/functions-time.png alt="Diplaying rentdue">
+                </div>
+                </ol>
+                
+                <h3>Formatting</h3>
+                
+                <p>In cells <span class="type-text">A29</span> to <span class="type-text">C34</span> we have an unfomatted table. Lets clean it up a bit to make it look nicer.</p>
+                
+                <ol class="instruction-list">
+                    <liv>
+                        <p>Select cells <span class="type-text">A29</span> through <span class="type-text"> C29.</span></p>
+                    </liv>
+                    
+                    <li>
+                        <p>In the Home Tab navigate to the Alignment section and click on the Merge & Center button. This button will take all of the highlighted cells and merge them into one cell and center the input inside the cell.</p>
+                    </li>
+
+                    <div class=centered-image-large border>
+                        <img src=images/editing-mergetitle-1.png alt="Merge and Center"> 
+                    </div>
+                    <li>
+                        <p>With the same cell selected, go to Home -> Formatting -> and choose the dropdown menu for formated cells. Select Heading 1.</p>
+                    </li>
+                    <div class=centered-image-large border>
+                        <img src=images/editing-formattitle-1.png alt="Format Title"> 
+                    </div>
+                    <li>
+                        <p>Select cells<span class="type-text"> A30</span> through <span class="type-text">C34</span></p> 
+                    </li>
+                    <li>
+                        <p>Go to Home -> Styles -> Format as Table -> Select a color scheme that you like</p> 
+                    </li>
+                    <div class=centered-image-large border>
+                        <img src=images/editing-formattable-1.png alt="Format Table"> 
+                    </div>
+                    <li>
+                        <p>Notice how the table headings have dropdown arrows now. We will look into these more coming up.</p> 
+                    </li>
+                </ol>
+                
+                <p>Congratulations! You now know some basics of Excel. Lets put what you learned to the test. In the table below try and replicate what we've done above, creating your own table with an Item, the Date it was sold, and the Price. Then calculate the total. Feel free to play around with values and formatting and be curious! </p>
+                
+                <h3>Budget Worksheet</h3>
+                
+                <ol class="instruction-list">
+                    <li>
+                        <p>Select the Budget worksheet in the Worksheet tab</p>
+                    </li>
+                    <li>
+                        <p>Select cell <span class="type-text">B18</span></p>
+                    </li>
+                    <li>
+                        <p>Type<span class="type-text"> =SUM(</span>into that cell</p>
+                    </li>
+                    <li>
+                        <p>Highlight cell <span class="type-text">B3</span> to <span class="type-text">B11</span></p>
+                    </li>
+                    <li>
+                        <p>Press Enter</p>
+                    </li>
+                </ol>
+
+                <div class=centered-image-large border>
+                    <img src=images/functions-sumexample-1.png alt="Using sum in example">
+                </div>
+
+                <ol class="instruction-list">
+                    <li>
+                        <p>Navigate to cell <span class="type-text">K7</span> and type <span class="type-text">=SU</span></p>
+                    </li>
+                    <p>A drop down menu will appear with all the functions in Excel's library that start with the letter "S". When a function is selected, a brief description of what the function does is provided.</p>
+                    <li>
+                        <p>Find the <span class="type-text">SUM</span> function</p>
+                    </li>
+                    <li>
+                        <p>Double click it to select it</p>
+                    </li>
+                    <li>
+                        <p>Select cells <span class="type-text">K4:K6</span></p>
+                    </li>
+                    <li>
+                        <p>Press Enter</p>
+                    </li>
+                    <li>
+                        <p>There should be a small green triangle in the top left corner of cell <span class="type-text">K7</span>. We will address this later in the manual.</p>
+                    </li>
+                    <div class=centered-image-large border>
+                        <img src=images/functions-dropdownexample-1.png alt="Using dropdown for functions">
+                    </div>
+                    <p>Now we are going to enter a function using the Insert Function button</p>
+                    
+                    <img class="sidebar-icon" src="images/functions-icon-1.png" alt="Using insert function button">
+                    <li>
+                        <p>Select cell <span class="type-text">K16</span> and click the Insert Function button.</p>
+                    </li>
+
+
+                    <p>A window will appear and allows you to search for any given function in Excel's complete function library. After a function is selected, it brings up a function arguments window that prompts for the necessary information.</p>
+                    <li>
+                        <p>Type "maximum" in the search for a function field at the top of the window</p>
+                    </li>
+                    <li>
+                        <p>Click Go to search</p>
+                    </li>
+                    <li>
+                        <p>Select <span class="type-text">MAX</span> from the search results</p>
+                    </li>
+                    <li>
+                        <p>Click OK</p>
+                    </li>
+                    <p>The <span class="type-text">MAX</span> function reports the largest number from the select range</p>
+                    <li>
+                        <p>Delete the content in the Number1 field</p>
+                    </li>
+                    <li>
+                        <p>Select cells <span class="type-text">B3:H11</span> in the workspace (move the Insert Function dialog box to the side if you can’t see the cells you need to select)</p>
+                    </li>
+                    <li>
+                        <p>Click OK</p>
+                    </li>
+                    <li>
+                        <p>Now try any of the different ways to enter a function that you just learned to fill out cells <span class="type-text">K17</span> (minimum) and <span class="type-text">K18</span> (average), Using the same range for cells <span class="type-text">B3:H11</span> (<span class="type-text">K17</span> should be $9.54 and <span class="type-text">K18</span> should be $16.81). If you want a to add a dificulty see try and tweak the range to calculate the expenses of just one month.</p>
+                    </li>
+                    <p>The minimum function reports the smallest number from the selected range and the average function reports the sum of the selected range divided by the number of cells in that range.</p>
+                </ol>
+
+                <h3>Entering Functions Using Auto-fill</h3>
+
+                <p>AutoFill is a convenient feature that allows you to repeat a common formula multiple times without having to type it in again and again.</p>
+
+                <ol class="instruction-list">
+                    <li>
+                        <p>Select cell <span class="type-text">B18</span></p>
+                    </li>
+                    <li>
+                        <p>Place your mouse over the dark green square in the bottom right corner of the active cell.</p>
+                    </li>
+                    <li>
+                        <p>Once you see the black cross icon (changed from the white cross icon), click and drag the selection across to cell <span class="type-text">H18</span></p>
+                    </li>
+                    <li>
+                        <p>Release the mouse.</p>
+                    </li>
+                </ol>
+
+                <div class=centered-image-large border>
+                    <img src=images/functions-autofillexample-1.png alt="Using AutoFill">
+                </div>
+
+                <p>Notice how the function has been copied into the selected cells. This function also works for the formulas we mentioned previously. What we just did was a shortcut for a copy-and-paste operation. If you inspect the entries we filled into cells <span class="type-text">H5:H9</span> you will notice that we didn't copy the exact formula from cell <span class="type-text">H4</span>. Instead, each different formula contains a reference to two cells in the same row. This is because the cells in the formulas are relatively addressed to the cells in column H, not by their absolute location. We will discuss the issues of relative versus absolute referencing later.</p>
+
+                <h2>Absolute Cell Functions</h2>
+
+                <p>Up to this point, we have been using relative cell addresses to reference cells. This allowed us to use AutoFill in order to create the same formula for different data points. Now we will focus on absolute cell references. Absolute references are good when you need to reference the same cell from multiple locations, something that is not possible when using relative cell addressing. Let's try an example using relative cell addressing and see why we need to learn absolute.</p>
+                <h3>Calculating Amount in Bank (per month)</h3>
+                <ol class="instruction-list">
+                    <li>
+                        <p>In cell <span class="type-text">C20</span>, type <span class="type-text">=(B20+B19-B18)*(1 + K20)</span>. This represents the amount you had at the start of last month plus your income minus your expense times the bank's intrest. From here, we can use the AutoFill, same as above, to fill in the cells horizontally.</p>
+                    </li>
+                    <li>
+                        <p>Click on cell <span class="type-text">D20</span>. You will notice that cell <span class="type-text">K20</span> has become cell <span class="type-text">K21</span>.</p>
+                    </li>
+                    <li>
+                        <p>Click on cell <span class="type-text">C20</span></p>
+                    </li>
+                    <li>
+                        <p>Type $'s around the K.</p>
+                    </li>
+                    <li>
+                        <p>Your function should look like this.</p>
+                    </li>
+                </ol>
+
+                <p align=center class="type-text">= (B20+B19-B18)*(1 + $K$20)</p>
+
+                <p>The $'s are used to declare the absolute cell functions. A $ behind the alphabet letter signifies you wish to keep the references within the K column, and a $ behind the numerical value signifies that you wish to keep the reference within the 20 column. Now drag the function to cell <span class="type-text">H20</span> and notice that cell <span class="type-text">K20</span> stays constant. </p>
+
+                <h2>Understanding Functions</h2>
+
+                <p>It is easy to copy and paste functions, but being able to write them on your own will help you in the long run. The first step towards being able to write your own function is being able to understand them and what they are telling Excel to do. Let’s start with a basic IF function:</p>
+
+                <p align=center class="type-text">=IF(logical_test_value,value_if_true,value_if_false)</p>
+
+                <p>We can break down this function into several parts:</p>
+
+                <ul>
+                    <li>
+                        <p><b>=IF</b>: This tells Excel that you want to carry out the IF function</p>
+                    </li>
+                    <li>
+                        <p><b>logical_test_value</b>: This is the condition that you want to check. For instance, if you want to make sure that cell <span class="type-text">A1</span> is less than or equal to 7, you would replace this with <span class="type-text">A1</span>
+                            <=7.</p>
+                    </li>
+                    <li>
+                        <p><b>value_if_true</b>: This controls what will appear or occur if the logical test is true</p>
+                    </li>
+                    <li>
+                        <p><b>value_if_false</b>: This controls what will appear or occur if the logical test is false</p>
+                    </li>
+                </ul>
+
+                <h3>Calculating if you are going to England</h3>
+
+                <ol class="instruction-list">
+                    <li>
+                        <p>Click on cell <span class="type-text">K11</span>, for 'Saved', and enter in the value of <span class="type-text">H20</span></p>
+                    </li>
+                    <li>
+                        <p>Now, to calculate 'Need', in cell <span class="type-text">K12</span> type <span class="type-text">= K10-K11</span></p>
+                    </li>
+                </ol>
+
+                <p>Now we will see how the IF function in <span class="type-text">K13</span> works in our budget sheet.</p>
+
+                <p align=center class="type-text">=IF(K11>=K10,"YES!","NO!")</p>
+
+                <ul>
+                    <li>
+                        <p>This function is telling Excel the following</p>
+                    </li>
+                    <li>
+                        <p>If the value in<span class="type-text"> K11</span> is greater than or equal to the value in<span class="type-text"> K10</span>, express <span class="type-text"> "YES!"</span>. If the value in<span class="type-text"> K11</span> is NOT greater than or equal to the value in<span class="type-text"> K10</span>, then express <span class="type-text"> "NO!"</span>.</p>
+                    </li>
+                    <li>
+                        <p>It is possible to put mathematical equations, other functions, and text as these values. Only the logical_test_value cannot have text written in it. Also note that any written text has to be placed in quotation ("") marks.</p>
+                    </li>
+                </ul>
+
+                <p>Note that not all functions follow this exact format. This is just used as a common example that you may encounter as you use Excel.</p>
+            </section> 
+            <!--Formulas and Functions END-->
+
+            <!--Charts START-->    
+            <section class="topic"> 
+                <H1>Basic Charts</H1>
+                <p>Occasionally, you may also want to look at your data in the form of a graph or a chart. Excel offers several different types of graphs and charts for you to interpret your data.</p>
+                <h3>Creating Charts (Including Styles and Moving)</h3>
+                <p>Let's create a graph using the data from the Budget worksheet.</p>
+                <ol class="instruction-list">
+                    <li>
+                        <p>Select the data from <span class="type-text">B18</span> horizontally to <span class="type-text">H20</span>.</p>
+                    </li>
+                    <li>
+                        <p>Select the Quick Analysis button on the bottom right corner of your data.</p>
+                    </li>
+                    <li>
+                        <p>Select Line Chart.</p>
+                    </li>
+                    <p>You can also create charts by using the Insert tab in the ribbon.</p>
+                    <div class=centered-image-large border>
+                        <img src=images/charts-quickanalysis-1.png alt="Quick analysis for making charts">
+                    </div>
+                    <p>A line chart will appear on-screen. Notice that the Y axis is the data that we selected earlier. The X axis, as we will name in a bit, are the months of the year. Now, let’s edit the chart title.</p>
+                    <li>
+                        <p>Select “Chart Title” and rename it "Money in the Bank".</p>
+                    </li>
+                    <li>
+                        <p>Right click anywhere on the graph and select "Select Data". A new window should appear.</p>
+                    </li>
+                    <li>
+                        <p>On the right side of the window, press the Edit button below Horizontal (Category) Axis Labels.</p>
+                    </li>
+                    <li>
+                        <p>Highlight cells <span class="type-text">B2</span> to <span class="type-text">H2</span> horizontally. This is the range that you would like to name your axis with. Since these are bank statements, it would make sense to use the names of the months.</p>
+                    </li>
+                    <li>
+                        <p>Now that we know how to make a line graph lets make a Pie Graph. Select cells <span class="type-text">B2:B11</span>.</p>
+                    </li>
+                    <li>
+                        <p>Select the Insert Tab and click on the pie/doughnut.</p>
+                    </li>
+                    <li>
+                        <p>Click 2D Pie</p>
+                    </li>
+                    <div class=centered-image-large border>
+                        <img src=images/charts-inserttab-1.png alt="Inserting charts">
+                    </div>
+                    <li>
+                        <p>Now let's try labelling the X axis properly. Double-click (or right-click) on the legend and click on the edit horizontal axis button.</p>
+                    </li>
+                    <li>
+                        <p>Select cells <span class="type-text">A3:A11</span>.</p>
+                    </li>
+                    <div class=centered-image-large border>
+                        <img src=images/Charts-PieChart-1.png alt="Pie chart">
+                    </div>
+                    <p>Let’s say that we want to move this chart to a new worksheet for further analysis. We can do that as well.</p>
+                    <li>
+                        <p>Select the June Spending Chart and navigate to the Design Tab.</p>
+                    </li>
+                    <li>
+                        <p>On the right side, locate the Move Chart button in the Location panel.</p>
+                    </li>
+                    <li>
+                        <p>Select Move Chart. You have two options to choose from. You can either place an object in a different worksheet (Object in:) or make a new worksheet altogether (New Sheet:).</p>
+                    </li>
+                    <li>
+                        <p>Click on New Sheet:</p>
+                    </li>
+                    <li>
+                        <p>Name it "June Spending".</p>
+                    </li>
+
+                </ol>
+                <h2>Editing Source Data</h2>
+                <p>This is especially helpful if you would like more than one line of data on a chart. For our exercises, we will walk through it, but we will not implement it.</p>
+                <ol class="instruction-list">
+                    <li>
+                        <p>Select your chart by clicking on it.</p>
+                    </li>
+                    <li>
+                        <p>Click on the Design Tab underneath Chart Tools.</p>
+                    </li>
+                    <li>
+                        <p>Within the Design Tab, you can click on Select Data from the Data panel. A window should appear on-screen.</p>
+                    </li>
+                    <li>
+                        <p>On the left side, you have several options to select your data.</p>
+                    </li>
+                    <div class=centered-image-medium border>
+                        <img src=images/charts-editingdata-1.png alt="Editing chart data">
+                    </div>
+                    <li>
+                        <p>Select Edit and then another window should pop up. From there, you can highlight your data.</p>
+                    </li>
+                </ol>
+                <h2>Chart Aesthetics</h2>
+                <p>Now that the charts are formatted the way we like them. Let's make them aesthetically appealing. This will be especially useful for charts that have a lot of data points or have a lot to present.</p>
+                <h3>Editing the Chart Style and Layout</h3>
+                <ol class="instruction-list">
+                    <li>
+                        <p>Select the chart you want to edit (either chart will do).</p>
+                    </li>
+                    <li>
+                        <p>On the right-hand side, there should be three chart buttons.</p>
+                    </li>
+                    <ul>
+                        <li>
+                            <p><b>Chart Elements: </b> Adds several chart elements, such as title and axis labels</p>
+                        </li>
+                        <li>
+                            <p><b>Chart Styles: </b>Changes the color scheme and style of the selected chart</p>
+                        </li>
+                        <li>
+                            <p><b>Chart Filters: </b>Edits which data points or names are visible on the chart</p>
+                        </li>
+                    </ul>
+                    <li>
+                        <p>Click Chart Styles</p>
+                    </li>
+                    <li>
+                        <p>Choose a fantastic chart style and color scheme</p>
+                    </li>
+                </ol>
+                <h3>Editing Axis</h3>
+                <b>You will probably notice that a lot of the chart elements can be edited by simply double-clicking the point of interest and using the sidebar to fine tune your element.</b>
+                <ol class="instruction-list">
+                    <li>
+                        <p>Select Add Chart Element in the Chart Layouts panel within the Design Tab.
+                        </p>
+                    </li>
+                    <li>
+                        <p>From the drop down menu, select Axis Title and choose Primary Horizontal.</p>
+                    </li>
+                    <li>
+                        <p>Repeat steps 1 and 2 to choose Primary Vertical.</p>
+                    </li>
+                    <li>
+                        <p>Double click the horizontal axis title and type "Time (in months)"</p>
+                    </li>
+                    <li>
+                        <p>Do the same for the vertical axis title and type "Money accumulated"</p>
+                    </li>
+                    <li>
+                        <p>To adjust the minimum and the maximum values of the axis, double-click the left axis. A panel should appear on the right.</p>
+                    </li>
+                    <li>
+                        <p>Select the Axis Options button.</p>
+                    </li>
+                    <li>
+                        <p>Select the drop down arrow to the left of Axis Options</p>
+                    </li>
+                    <li>
+                        <p>Change the minimum and maximum bounds to make the graph look nice. Changes in the minimum and maximum units will change the amount of space between each horizontal line.</p>
+                    </li>
+                </ol>
+                <h3>Editing Gridlines</h3>
+                <ol class="instruction-list">
+                    <li>
+                        <p>Double click the gridlines on the Money in the Bank graph. If the right-hand panel is still on screen, it should have the title "Format Major Gridlines".</p>
+                    </li>
+                    <li>
+                        <p>Select the Gradient line bullet point.</p>
+                    </li>
+                    <li>
+                        <p>Change the Preset Gradients to something that looks nice to you.</p>
+                    </li>
+                    <li>
+                        <p>There are many other options to optimize your gridlines, but these options are some basic choices.</p>
+                    </li>
+                </ol>
+                <h3>Editing the Legend</h3>
+                <ol class="instruction-list">
+                    <li>
+                        <p>Double click the legend on the June Spending pie chart and a right-hand panel should show on screen if it isn't already.</p>
+                    </li>
+                    <li>
+                        <p>Select the Legend Options button.</p>
+                    </li>
+                    <li>
+                        <p>Change the Legend Position by selecting the Right option. The legend should appear on the right side.</p>
+                    </li>
+                    <li>
+                        <p>Select the Fill & Line button.</p>
+                    </li>
+                    <li>
+                        <p>Change the Border to Solid Line.</p>
+                    </li>
+                    <li>
+                        <p>Change the color by selecting the drop down paint bucket icon.</p>
+                    </li>
+                </ol>
+                <h3>Displaying Values on the Chart</h3>
+                <ol class="instruction-list">
+                    <li>
+                        <p>Select the June Spending pie chart.</p>
+                    </li>
+                    <li>
+                        <p>From the chart buttons, choose the Chart Elements button.</p>
+                    </li>
+                    <li>
+                        <p>Select Data Labels.</p>
+                    </li>
+                    <li>
+                        <p>Select the Data Labels on the chart.</p>
+                    </li>
+                    <li>
+                        <p>Select the Label Options in the right hand sidebar.</p>
+                    </li>
+                    <li>
+                        <p>Change the position of the Data Labels to Below.</p>
+                    </li>
+                </ol>
+            </section>
+            <!--Charts END-->
+
+            <!--Importing Data START-->
+<!--
+            <section class="topic"> 
+                <H1>Importing Data</H1>
+                <p>In business, research, and other practical situations, large data sets are very common. It would be very time consuming and error prone to insert thousands of lines of data by hand. Often times, data that needs to be inserted is already available in an electronic format; this could be from a larger database or data gathered from equipment in an experiment. There are common file types for transferring this data between programs and into Excel. One of these common types is a delimited text file with file extension .txt.</p>
+                <h3>Importing a Delimited File</h3>
+                <p>We will complete our class list by inserting a text file that contains a compiled list of our remaining items. The items list is a text file (.txt) that we will import into a format that Excel can use. A delimiter is used in the file to distinguish between the columns and rows of data. We will use the text import wizard to identify the delimiters and put the data into an Excel spreadsheet.</p>
+                <ol class="instruction-list">
+                    <li>
+                        <p>Select the Classes worksheet.</p>
+                    </li>
+                    <li>
+                        <p>Before we get started, let's fill out the maximum and minimum values beneath the Breadth Legend by inserting we learned previously.</p>
+                    </li>
+                    <li>
+                        <p>Once you are done with that, click on the File Tab and click Open.</p>
+                    </li>
+                    <li>
+                        <p>Select All Files from the Files of Type drop down menu (this allows us to view files other than .xlsx files, such as .txt)</p>
+                    </li>
+                    <div class=centered-image-small border>
+                        <img src=images/importing-selectfiles-1.png alt="Importing files">
+                    </div>
+                    <li>
+                        <p>Select text file named <span class="type-text">excel1-classes.txt</span></p>
+                    </li>
+                    <li>
+                        <p>Click Open</p>
+                    </li>
+                    <li>
+                        <p>Make sure that the Delimited button is checked and that the file import is starting at row 1.</p>
+                    </li>
+                    <div class=centered-image-medium border>
+                        <img src=images/importing-delimited-1.png alt="Importing delimited files Wizard 1">
+                    </div>
+                    <li>
+                        <p>Click the Next button</p>
+                    </li>
+                    <li>
+                        <p>Make sure that only the Semicolon box is checked</p>
+                    </li>
+                    <p>This tells us what our delimiter, or divider, is in the text file. In most cases the delimiter will be a comma or semicolon. If you ever receive this type of file, the person or program you get it from should tell you what the delimiter is. You can also look at the Data Preview to see how Excel is splitting up the data to make sure it looks correct.</p>
+                    <div class=centered-image-medium border>
+                        <img src=images/importing-delimited-2.png alt="Importing delimited files wizard 2">
+                    </div>
+                    <li>
+                        <p>Click Next</p>
+                    </li>
+                    <li>
+                        <p>Click Finish</p>
+                    </li>
+                    <p>We now have a new workbook open titled "items" and it contains all of our imported data.</p>
+                </ol>
+                <h3>Copying the Data to Our Class List</h3>
+                <ol class="instruction-list">
+                    <li>
+                        <p>Click in cell <span class="type-text">A1</span> and press Shift+Ctrl+End</p>
+                    </li>
+                    <p>This is a shortcut to select a boxed region. The command selects a range of filled in cells until it reaches an empty row or column. In this case, it selects three blank columns (D, F, and G), these columns simply have a single space in them. This is for formatting reasons when this data is inserted into our existing spreadsheet.</p>
+                    <li>
+                        <p>Copy the cells selected</p>
+                    </li>
+                    <li>
+                        <p>Switch back to the <span class="type-text">Excel1-Classes.xlsx</span> worksheet and select cell <span class="type-text">A14</span></p>
+                    </li>
+                    <li>
+                        <p>Right-click in this cell and select Insert Copied Cells...</p>
+                    </li>
+                    <p>Notice that our functions for the maximum and minimum values have green tabs in the upper left hand corners of their cells. This is similar to the green tab that we saw in our previous worksheet. These tabs allow us to update the functions for the new data we just inserted. When selected, these cells display a caution sign with an exclamation point in them that allows us to update the function to include the copied cells.</p>
+                    <li>
+                        <p>For all cells marked with a green triangle, click on the exclamation point sign</p>
+                    </li>
+                    <li>
+                        <p>Select "Update Formula to Include Cells"</p>
+                    </li>
+                </ol>
+                <div class=centered-image-medium border>
+                    <img src=images/importing-copyingcells-1.png alt="Copying cells">
+                </div>
+                <p>The functions are updated appropriately to include our new data. We don't want to update the formula in our previous worksheet because Excel believes that we have forgotten the value for "Study Abroad Cost". However, we have purposely left it out of the equation because it has nothing to do with the initial amount of money in our bank.</p>
+            </section> 
+-->
+            <!--Importing Data END-->
+
+            <!--Sorting and Filtering START-->
+            <section class="topic"> 
+                <h1>Viewing, Sorting, & Filtering Data</h1>
+                <p>With Excel capable of holding millions of pieces of data, it can become overwhelming to use its features without having knowledge of its viewing and sorting options. Viewing an overwhelming data set can become manageable and efficient by utilizing a few of Excel's simple features.</p>
+                <h3>Freezing Panes</h3>
+                <p>You will notice that as you scroll down the spreadsheet, you lose the column headings at the top of the worksheet (Store Name, Item Cost, etc.). These would be helpful references if you are viewing an item at the bottom of the list but unfortunately, since our list is so large, it isn't possible to view them. Freezing panes is a solution to this problem</p>
+                <ol class="instruction-list">
+                    <li>
+                        <p>Click in cell <span class="type-text">A1</span></p>
+                    </li>
+                    <li>
+                        <p>Select the View Tab</p>
+                    </li>
+                    <li>
+                        <p>Select the Freeze Panes button from the Window panel</p>
+                    </li>
+                    <li>
+                        <p>Click Freeze Panes</p>
+                    </li>
+                </ol>
+                <p>This "freezes" everything above the active cell <span class="type-text">A3</span>; so now, when we scroll down the worksheet, all of our column headings remain at the top of our screen. To unfreeze the panes, select the Freeze Panes button from the Window panel again and click Unfreeze Panes.</p>
+                <h3>Filtering Data</h3>
+                <p>Sorting is useful but can be a little inconvenient if you just need quick looks at data in a certain way. Filters can be applied to our data to make it easier to view specific categories of information. A filter shows only the information that we ask for and hides the other data. Let's explore a few Filter options with our class list.</p>
+                <ol class="instruction-list">
+                    <li>
+                        <p>Select cells <span class="type-text">A1:G1</span>.</p>
+                    </li>
+                    <li>
+                        <p>From the Data Tab, click the Filter button. You should now see small arrow in each column header. Clicking on these arrows will open a filter menu for that header.</p>
+                    </li>
+                    <div class=centered-image-small border>
+                        <img src=images/filtering-dropdownexample-1.png alt="Filter dropdown ">
+                    </div>
+                    <li>
+                        <p>Click on the drop-down arrow for "Semester"</p>
+                    </li>
+                    <li>
+                        <p>Uncheck Select All.</p>
+                    </li>
+                    <li>
+                        <p>Then select Fall</p>
+                    </li>
+                    <li>
+                        <p>Click OK.</p>
+                    </li>
+                    <p>You should now only see all of the classes offered in the Fall semester. Note that all of your data is still present, but it is currently hidden.</p>
+                    <li>
+                        <p>To see everything again, click Select All on the Category filter menu</p>
+                    </li>
+                    <li>
+                        <p>Click OK.</p>
+                    </li>
+                    <p>A variety of filters can be applied to your data depending on your needs or desires. We can also filter our data based on specific criteria applied a column or in an alphabetical or numerical order. Take a few moments to explore some options or ask your instructor for more information.</p>
+                    <li>
+                        <p>To remove all filters, click the Filter button in the Data Tab.</p>
+                    </li>
+                </ol>
+                <h3>Sorting Data</h3>
+                <p>Often times you will have a large amount of data and you will want to sort it in some logical way (alphabetically, numerically, etc.). We can sort our data in multiple levels by using the Sort feature.</p>
+                <ol class="instruction-list">
+                    <li>
+                        <p>Select cells <span class="type-text">A1:G47</span> (for all class titles and descriptions)</p>
+                    </li>
+                    <li>
+                        <p>On the Data Tab, click the Sort button.</p>
+                    </li>
+                    <li>
+                        <p>Check the option "My data has headers" box in the "Sort" dialog box that appears. This allows us to user our header names as the sort options.</p>
+                    </li>
+                    <div class=centered-image-medium border>
+                        <img src=images/sorting-sortingbutton-1.png alt="Sort button">
+                    </div>
+                    <li>
+                        <p>Under the “Column: Sort by” menu choose Semester.</p>
+                    </li>
+                    <li>
+                        <p>Under the “Sort On” menu choose Values</p>
+                    </li>
+                    <li>
+                        <p>Under the “Order” menu choose A to Z.</p>
+                    </li>
+                    <li>
+                        <p>Click OK</p>
+                    </li>
+                    <p>We have organized our data alphabetically by Department. We can add as many levels of sorting as desired.</p>
+                    <li>
+                        <p>Try to add another level of sorting, such as by Credit from Largest to Smallest.</p>
+                    </li>
+                </ol>
+            </section> 
+
+
+            <section class="topic">
+                <h1>Saving</h1> <!--saving edit-->
+                <p>From the File tab you can save, print, and open workbooks. You can also access special options such as add-ins and customizing your ribbons.</p>
+                <h3>Saving Workbooks</h3>
+                <ol class="instruction-list">
+                    <li>
+                        <p>To save your workbook, click the File Tab</p>
+                    </li>
+                    <li>
+                        <p>Click Save As to save your workbook as new, unique file</p>
+                    </li>
+                    <li>
+                        <p>Under the "Save as type", select "Excel Workbook".</p>
+                    </li>
+                    <li>
+                        <p>Click Save</p>
+                    </li>
+                </ol>
+                <div class=centered-image-large border>
+                    <img src=images/saving-menu-1.png alt="Saving menu">
+                </div>
+                <!--printing
+                    <h3>Printing</h3>
+                    <p>Printing in Excel can often be a painstaking process without the proper precautions. We will be using the Classes worksheet for this exercise.</p>
+                    <p>The first step in printing an Excel file is to preview how the page will look before it is sent to the printer. To accomplish this, we can use the Page Layout View.</p>
+                    <ol class="instruction-list">
+                        <li>
+                            <p>In the View Tab select Page Layout from workbook Views panel. Notice that, by default, our data will be separated when printed. To change the default let's switch to a different view.</p>
+                        </li>
+                        <li>
+                            <p>Select Page Break Preview from the workbook views panel.</p>
+                        </li>
+                        <li>
+                            <p>Click and hold on the vertical blue dotted lines.</p>
+                        </li>
+                        <li>
+                            <p>Click and Drag the line right until it meets the solid single blue line at the edge of the spreadsheet We are now left with one page containing all of our information. We can split it into two pages to make the data more readable. This is more preferable for pages that have longer lists of information.</p>
+                        </li>
+                        <li>
+                            <p>Click and Drag the bottom blue line down and then release</p>
+                        </li>
+                        <li>
+                            <p>Continue this process until you can see the dotted line and two pages are displayed.</p>
+                        </li>
+                        <li>
+                            <p>Now, resize the pages so that you have Fall classes on page 1 and Spring classes on page 2.</p>
+                        </li>
+                    </ol>
+                    <h3>Page Setup</h3>
+                    <p>If we printed as is, the data on the second page would not have headers. This would lead to the same problem we had before we used 'freeze panes'; it would be difficult to know which header the column of data belongs to. We will instead configure our plot so that the first and second rows appear on every sheet.</p>
+                    <ol class="instruction-list">
+                        <li>
+                            <p>In Page Layout Tab, select Print Titles</p>
+                        </li>
+                        <li>
+                            <p>Under the Sheet Tab, click in the Rows to repeat at top field.</p>
+                        </li>
+                        <li>
+                            <p>In the spreadsheet, select Row 1</p>
+                        </li>
+                        <li>
+                            <p>Click OK</p>
+                        </li>
+                        <li>
+                            <p>Select the Page Layout view to see your changes Since this isn't ideal for our data set, return to the page break preview in the View tab and place everything back on one page. From there, we can still make the page look more professional by changing the page orientation, print scale and adding a footer.</p>
+                        </li>
+                        <li>
+                            <p>Select the Page Layout Tab</p>
+                        </li>
+                        <li>
+                            <p>In the Page Setup panel, click on the Orientation button and choose Landscape from the drop down menu.</p>
+                        </li>
+                        <li>
+                            <p>Enter a value of 85% in the Scale field in the Scale to Fit panel to change the print size.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Scroll to the bottom of a page in Page layout view and click the Click to add footer</p>
+                        </li>
+                        <li>
+                            <p>In the Design tab, select Page Number from the Header and Footer Elements panel</p>
+                        </li>
+                        <li>
+                            <p>Select the empty space next to the right of the footer box and select the Current Date element</p>
+                        </li>
+                    </ol>
+                    <div class=centered-image-large border>
+                        <img src=images/pagesetup-ribbon-1.png alt="Page Setup ribbon">
+                    </div>
+                    <p>We finally have a good scale and orientation. Also, our headings appear on both pages and we can see our footer. The document can now be printed from the File tab where there are a few other settings that can be controlled as well</p>
+    -->
+                <h3>Closing Excel</h3>
+                <ol class="instruction-list">
+                    <li>
+                        <p>Select the File Tab (backstage view)</p>
+                    </li>
+                    <li>
+                        <p>Save your workbook</p>
+                    </li>
+                    <li>
+                        <p>Exit Excel by selecting the Exit button at the bottom of the left-side menu</p>
+                    </li>
+                </ol>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>For Excel support and more information visit <a href="https://support.office.com/en-us/excel">support.office.com/en-us/excel</a>. Thank you for attending Excel 1. We look forward to seeing you in Excel 2: Functions, Excel 2: Analysis, Excel 2: Data Visualization, and many other Software Training for Students classes in addition to our Ask a Trainer sessions. All of these services can be accessed at our website, <a href="https://wisc.edu/sts">wisc.edu/sts</a>.</p>
+            </section> 
+            <!--Sorting and Filtering END-->
+
+            <!--Topics End-->
+            </body>	
+        </html>
