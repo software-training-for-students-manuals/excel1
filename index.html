@@ -110,7 +110,7 @@ Good luck, and have fun!
                     <p><b>View Magnification: </b>allows user to increase or decrease the "zoom" level of the workspace, does not change the actual size of the fonts and images that will print</p>
                 </li>
 
-                <li>
+                <li> v
                     <p><b>Scroll bars: </b>allows user to pan to cells that currently aren't visible in the workspace</p>
                 </li>
 
@@ -344,26 +344,26 @@ Good luck, and have fun!
                 
                 <ol class="instruction-list">
                     <li>
-                        <p>Highlight cell <span class="type-text">A6</span> to <span class="type-text">B27</span></p>
-                    </li>
-                    <li>
-                        <p>Go to the Home tab -> Number Pannel -> Select the dropdown menu and choose Time. Now these cells are formated for time. Consequently, you can use this same method to format cells for other values such as currency.</p>
-                    </li>
-                    <li>
-                        <p>Now fill in each of the four cells (<span class="type-text">A26</span>-<span class="type-text">B27</span>) with a Time In and Time Out. Notice the formating Excel uses for time. Note that if you had typed them in on your own Excel would have atomatically formated the cells to time. Also note that there needs to be a space between the time and AM/PM.</p>
+                        <p>Fill in each of the four cells (<span class="type-text">A26</span>-<span class="type-text">B27</span>) with a Time In and Time Out. Notice the formating Excel uses for time. Also note that there needs to be a space between the time and AM/PM.</p>
                     </li>
                     <li>
                         <p>Select cell <span class="type-text">C26</span></p>
                     </li>
                     <li>
-                        <p>Type<span class="type-text"> =(B26-A26)*24</span> into that cell. Notice how you need to multiply this value by 24. This is because Excel stores time values as decimal fractions of a 24 hour day. One hour is equal to 1/24th of a day. Thus, to get a whole number you must multiply the value by 24.</p>
+                        <p>Type<span class="type-text"> =(B26-A26)*24</span> into that cell. Notice how you need to multiply this value by 24. This is because Excel stores time values as decimal fractions of a 24 hour day. One hour is equal to 1/24th of a day. Thus, to get a whole number you must multiply the value by 24. </p>
                     </li>
                     <li>
-                        <p>Do the same thing for cell <span class="type-text">C27</span></p>
+                    <p>Do the same thing for cell <span class="type-text">C27</span>. You have probally also noticed that Excel has automatically formated these cells to time. We will change that in the next step.</p>
                     </li>
                     <div class=centered-image-large border>
                     <img src=images/functions-time.png alt="Diplaying rentdue">
-                </div>
+                    </div>
+                    <li>
+                        <p>Select cells (<span class="type-text">C26</span>-<span class="type-text">C27</span>)Go to the Home tab -> Number Pannel -> Select the dropdown menu and choose Number. Consequently, you can use this same method to format cells for all sorts of other values such as currency.</p>
+                    </li>
+                    <div class=centered-image-large border>
+                    <img src=images/functions-cellType.png alt="Diplaying rentdue">
+                    </div>
                 </ol>
                 
                 <h3>Formatting</h3>
@@ -397,12 +397,14 @@ Good luck, and have fun!
                     <div class=centered-image-large border>
                         <img src=images/editing-formattable-1.png alt="Format Table"> 
                     </div>
-                    <li>
-                        <p>Notice how the table headings have dropdown arrows now. We will look into these more coming up.</p> 
-                    </li>
-                </ol>
+    
+                <p>Congratulations! You now know some basics of Excel. Lets put what you learned to the test. In the table below try and replicate what we've done above, creating your own table with an Item, the Date it was sold, and the Price. Then calculate the total. Feel free to play around with values and formatting and be curious! Below is a picture for reference. </p>
                 
-                <p>Congratulations! You now know some basics of Excel. Lets put what you learned to the test. In the table below try and replicate what we've done above, creating your own table with an Item, the Date it was sold, and the Price. Then calculate the total. Feel free to play around with values and formatting and be curious! </p>
+                <div class=centered-image-large border>
+                <img src=images/format-do_it_yourself_table.png alt="Format Table"> 
+                </div>
+                    
+                </ol>
                 
                 <h3>Budget Worksheet</h3>
                 
@@ -602,33 +604,91 @@ Good luck, and have fun!
                 <p>Let's create a graph using the data from the Budget worksheet.</p>
                 <ol class="instruction-list">
                     <li>
-                        <p>Select the data from <span class="type-text">B18</span> horizontally to <span class="type-text">H20</span>.</p>
+                        <p>Select the data from <span class="type-text">B20</span> horizontally to <span class="type-text">H20</span>.</p>
                     </li>
                     <li>
-                        <p>Select the Quick Analysis button on the bottom right corner of your data.</p>
+                        <p>Go to the Insert tab -> Charts -> Recommened Charts</p>
                     </li>
                     <li>
                         <p>Select Line Chart.</p>
                     </li>
-                    <p>You can also create charts by using the Insert tab in the ribbon.</p>
                     <div class=centered-image-large border>
                         <img src=images/charts-quickanalysis-1.png alt="Quick analysis for making charts">
                     </div>
                     <p>A line chart will appear on-screen. Notice that the Y axis is the data that we selected earlier. The X axis, as we will name in a bit, are the months of the year. Now, let’s edit the chart title.</p>
                     <li>
-                        <p>Select “Chart Title” and rename it "Money in the Bank".</p>
+                        <p>Double Click to select “Chart Title” and rename it "Money in the Bank".</p>
                     </li>
                     <li>
-                        <p>Right click anywhere on the graph and select "Select Data". A new window should appear.</p>
+                        <p>Select the graph and go to the Chart Design tab and select "Select Data" in the data pannel.</p>
                     </li>
                     <li>
                         <p>On the right side of the window, press the Edit button below Horizontal (Category) Axis Labels.</p>
                     </li>
                     <li>
                         <p>Highlight cells <span class="type-text">B2</span> to <span class="type-text">H2</span> horizontally. This is the range that you would like to name your axis with. Since these are bank statements, it would make sense to use the names of the months.</p>
+                     <div class=centered-image-large border>
+                        <img src=images/charts-selectingdata.png alt="Selecting Data">
+                    </div>
+                    </li>
+                    
+                    
+                    <h3>Editing Axis</h3>
+                <b>You will probably notice that a lot of the chart elements can be edited by simply double-clicking the point of interest and using the sidebar to fine tune your element.</b>
+                <ol class="instruction-list">
+                    <li>
+                        <p>Select Add Chart Element in the Chart Layouts panel within the Design Tab.
+                        </p>
                     </li>
                     <li>
-                        <p>Now that we know how to make a line graph lets make a Pie Graph. Select cells <span class="type-text">B2:B11</span>.</p>
+                        <p>From the drop down menu, select Axis Title and choose Primary Horizontal.</p>
+                    </li>
+                    <li>
+                        <p>Repeat steps 1 and 2 to choose Primary Vertical.</p>
+                    </li>
+                    <li>
+                        <p>Double click the horizontal axis title and type "Time (in months)"</p>
+                    </li>
+                    <li>
+                        <p>Do the same for the vertical axis title and type "Money Accumulated"</p>
+                    </li>
+                    <li>
+                        <p>Another useful thing to be able to do in Excel is to adjust the minimum and the maximum values of the axis. Although this is not important to do for this graph we will show you how to do it for future refernce. </p>
+                    </li>
+                    <li>
+                        <p>Double-click the left axis and make sure it is highlighted. A panel should appear on the right. Select the Axis Options button.</p>
+                    </li>
+                    <li>
+                        <p>Select the drop down arrow to the left of Axis Options</p>
+                    </li>
+                    <li>
+                        <p>Change the minimum and maximum bounds to make the graph look nice. Changes in the minimum and maximum units will change the amount of space between each horizontal line.</p>
+                    </li>
+                    <li> 
+                        <p> Lastly, notice how many additional tools there are to customize your graphs. We won't go over all of them but feel free to play around with them on your own time.</p>
+                    </li>
+                </ol>
+
+<!--                <h3>Editing Gridlines</h3>
+                <ol class="instruction-list">
+                    <li>
+                        <p>Double click the gridlines on the Money in the Bank graph. If the right-hand panel is still on screen, it should have the title "Format Major Gridlines".</p>
+                    </li>
+                    <li>
+                        <p>Select the Gradient line bullet point.</p>
+                    </li>
+                    <li>
+                        <p>Change the Preset Gradients to something that looks nice to you.</p>
+                    </li>
+                    <li>
+                        <p>There are many other options to optimize your gridlines, but these options are some basic choices.</p>
+                    </li>
+                </ol>
+-->                   
+                    
+                    <h2>Pie Graph</h2>
+                    <li>
+                        <p>Now that we know how to make a line graph lets make a Pie Graph. Select cells <span class="type-text">B3:B11</span>.</p>
                     </li>
                     <li>
                         <p>Select the Insert Tab and click on the pie/doughnut.</p>
@@ -640,33 +700,17 @@ Good luck, and have fun!
                         <img src=images/charts-inserttab-1.png alt="Inserting charts">
                     </div>
                     <li>
-                        <p>Now let's try labelling the X axis properly. Double-click (or right-click) on the legend and click on the edit horizontal axis button.</p>
+                        <p>Now let's try labelling the X axis properly. In the same manner as with the line chart select the graph and go to the Chart Design Tab on the top and hit "Select Data" in the data pannel. </p>
                     </li>
                     <li>
-                        <p>Select cells <span class="type-text">A3:A11</span>.</p>
+                        <p> Click on Edit Horizontal Categoy Axis Labels and Select cells <span class="type-text">A3:A11</span>.</p>
                     </li>
                     <div class=centered-image-large border>
                         <img src=images/Charts-PieChart-1.png alt="Pie chart">
                     </div>
-                    <p>Let’s say that we want to move this chart to a new worksheet for further analysis. We can do that as well.</p>
-                    <li>
-                        <p>Select the June Spending Chart and navigate to the Design Tab.</p>
-                    </li>
-                    <li>
-                        <p>On the right side, locate the Move Chart button in the Location panel.</p>
-                    </li>
-                    <li>
-                        <p>Select Move Chart. You have two options to choose from. You can either place an object in a different worksheet (Object in:) or make a new worksheet altogether (New Sheet:).</p>
-                    </li>
-                    <li>
-                        <p>Click on New Sheet:</p>
-                    </li>
-                    <li>
-                        <p>Name it "June Spending".</p>
-                    </li>
 
                 </ol>
-                <h2>Editing Source Data</h2>
+               <h2>Editing Source Data</h2>
                 <p>This is especially helpful if you would like more than one line of data on a chart. For our exercises, we will walk through it, but we will not implement it.</p>
                 <ol class="instruction-list">
                     <li>
@@ -688,6 +732,7 @@ Good luck, and have fun!
                         <p>Select Edit and then another window should pop up. From there, you can highlight your data.</p>
                     </li>
                 </ol>
+
                 <h2>Chart Aesthetics</h2>
                 <p>Now that the charts are formatted the way we like them. Let's make them aesthetically appealing. This will be especially useful for charts that have a lot of data points or have a lot to present.</p>
                 <h3>Editing the Chart Style and Layout</h3>
@@ -716,53 +761,7 @@ Good luck, and have fun!
                         <p>Choose a fantastic chart style and color scheme</p>
                     </li>
                 </ol>
-                <h3>Editing Axis</h3>
-                <b>You will probably notice that a lot of the chart elements can be edited by simply double-clicking the point of interest and using the sidebar to fine tune your element.</b>
-                <ol class="instruction-list">
-                    <li>
-                        <p>Select Add Chart Element in the Chart Layouts panel within the Design Tab.
-                        </p>
-                    </li>
-                    <li>
-                        <p>From the drop down menu, select Axis Title and choose Primary Horizontal.</p>
-                    </li>
-                    <li>
-                        <p>Repeat steps 1 and 2 to choose Primary Vertical.</p>
-                    </li>
-                    <li>
-                        <p>Double click the horizontal axis title and type "Time (in months)"</p>
-                    </li>
-                    <li>
-                        <p>Do the same for the vertical axis title and type "Money accumulated"</p>
-                    </li>
-                    <li>
-                        <p>To adjust the minimum and the maximum values of the axis, double-click the left axis. A panel should appear on the right.</p>
-                    </li>
-                    <li>
-                        <p>Select the Axis Options button.</p>
-                    </li>
-                    <li>
-                        <p>Select the drop down arrow to the left of Axis Options</p>
-                    </li>
-                    <li>
-                        <p>Change the minimum and maximum bounds to make the graph look nice. Changes in the minimum and maximum units will change the amount of space between each horizontal line.</p>
-                    </li>
-                </ol>
-                <h3>Editing Gridlines</h3>
-                <ol class="instruction-list">
-                    <li>
-                        <p>Double click the gridlines on the Money in the Bank graph. If the right-hand panel is still on screen, it should have the title "Format Major Gridlines".</p>
-                    </li>
-                    <li>
-                        <p>Select the Gradient line bullet point.</p>
-                    </li>
-                    <li>
-                        <p>Change the Preset Gradients to something that looks nice to you.</p>
-                    </li>
-                    <li>
-                        <p>There are many other options to optimize your gridlines, but these options are some basic choices.</p>
-                    </li>
-                </ol>
+                
                 <h3>Editing the Legend</h3>
                 <ol class="instruction-list">
                     <li>
@@ -804,6 +803,28 @@ Good luck, and have fun!
                     <li>
                         <p>Change the position of the Data Labels to Below.</p>
                     </li>
+                     </ol>  
+                
+                   <h3>Moving Charts</h3> 
+                    <ol class="instruction-list">
+                    
+                   <p>Let’s say that we want to move this chart to a new worksheet for further analysis or to share it with others without our data. We can do that as well.</p>
+                    <li>
+                        <p>Select the June Spending Chart and navigate to the Design Tab.</p>
+                    </li>
+                    <li>
+                        <p>On the right side, locate the Move Chart button in the Location panel.</p>
+                    </li>
+                    <li>
+                        <p>Select Move Chart. You have two options to choose from. You can either place an object in a different worksheet (Object in:) or make a new worksheet altogether (New Sheet:).</p>
+                    </li>
+                    <li>
+                        <p>Click on New Sheet:</p>
+                    </li>
+                    <li>
+                        <p>Name it "June Spending".</p>
+                    </li>
+                    
                 </ol>
             </section>
             <!--Charts END-->
